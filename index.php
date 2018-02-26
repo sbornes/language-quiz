@@ -11,7 +11,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- JS -->
-    <script type="text/javascript" src="myscripts.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <div class="container-fluid h-100">
@@ -19,7 +19,7 @@
         <div class="col-sm-12 align-self-center">
           <div class="w-25 mx-auto">
             <h3 class="text-uppercase font-weight-bold text-center">Hiragana Quiz</h3>
-            <button type="button" class="btn btn-primary w-100">Start</button></div>
+            <button onclick="startQuizClick()" type="button" class="btn btn-primary w-100">Start</button></div>
           </div>
         </div>
       </div>
