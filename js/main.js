@@ -27,8 +27,11 @@ function newHiragana()
   var random_hiragana = random_item(hiraganaArr);
   count++;
   console.log("selected hiragana: " + random_hiragana.question + " = " + random_hiragana.answer);
-  $("#data").load('quiz_card.php', {'hiragana': random_hiragana.question, 'answer': random_hiragana.answer, 'qCount' : count, 'qTotal' : ArrSize}, function() {
-    $('#hiragana-quiz-answer').focus();
+  $('#data').fadeOut('fast', function() {
+    $("#data").load('quiz_card.php', {'hiragana': random_hiragana.question, 'answer': random_hiragana.answer, 'qCount' : count, 'qTotal' : ArrSize}, function() {
+      $('#data').fadeIn('fast');
+      $('#hiragana-quiz-answer').focus();
+    });
   });
 }
 
@@ -40,15 +43,17 @@ function random_item(items)
 
 // TEXT BOX ANSWER
 $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
-  if (event.keyCode == 13) {
-    if(count == ArrSize) {
-      // Finished Quiz
-      alert("Quiz Finished!");
-    }
-    else {
-      console.log("arrIndex: " + ArrIndex);
-      hiraganaArr.splice(ArrIndex, 1);
-      newHiragana();
+  if(event.keyCode == 13) {
+    if($(this).val().length > 0) {
+      if(count < ArrSize) {
+        console.log("arrIndex: " + ArrIndex);
+        hiraganaArr.splice(ArrIndex, 1);
+        newHiragana();
+      }
+      else {
+        // Finished Quiz
+        alert("Quiz Finished!");
+      }
     }
     return false; // prevent the button click from happening
   }
