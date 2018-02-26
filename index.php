@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script type="text/javascript" src="myscripts.js"></script>
   </head>
   <body>
     <div class="container-fluid h-100">
@@ -22,6 +24,15 @@
         </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="container center">
+        <div class="row justify-content-center">
+          <span class="text-muted">By sbornes.</span>
+        </div>
+      </div>
+    </footer>
+
 
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
