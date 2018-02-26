@@ -20,3 +20,8 @@ h2 {
   position: absolute;
   width: 100%;
 }
+
+.hiragana-text {
+  font-size: 128px;
+  font-size: 10vw;
+}
