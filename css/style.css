@@ -1,7 +1,14 @@
-body
-{
+html, body {
+  height: 100%;
+}
+
+body {
   /* https://puu.sh/zw040/ef3bf84042.png Colour Scheme */
   background-color: #252830;
   color: #ECEEEC;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
   font-family: 'Roboto', sans-serif;
 }
