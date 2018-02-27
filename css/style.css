@@ -30,3 +30,14 @@ h2 {
   font-size: 128px;
   font-size: 10vw;
 }
+
+.button-back {
+  font-size: 36px;
+  opacity: 0.25;
+  text-decoration: none;
+
+}
+
+.button-back:hover {
+  opacity: 1.0;
+}

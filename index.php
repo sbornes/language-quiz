@@ -13,16 +13,15 @@
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <!-- FONT AWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
     <!-- BODY -->
     <div class="container-fluid h-100">
       <div class="row h-100">
         <div class="col-sm-12 align-self-center" id="data">
-          <div class="w-25 mx-auto">
-            <h3 class="text-uppercase font-weight-bold text-center">Hiragana Quiz</h3>
-            <button onclick="startQuizClick()" type="button" class="btn btn-primary w-100">Start</button></div>
-          </div>
+          <!-- Dynamically loaded -->
         </div>
       </div>
     </div>

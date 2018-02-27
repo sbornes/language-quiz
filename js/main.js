@@ -1,15 +1,38 @@
 var hiraganaArr = [];
+var hiraganaArrHistory = [];
 var count = 0;
 var ArrSize = 0;
 var ArrIndex = 0;
 var answerCorrect = 0;
+var random_hiragana = null;
+
+$( document ).ready(function() {
+  mainPage();
+});
+
+function mainPage() {
+  $('#data2').fadeOut(500, function() {
+    $( "#data2" ).remove();
+  });
+
+  $('#data').fadeOut(500, function() {
+    if ($('#data').hasClass('col-sm-6')) {
+      $('#data').addClass('col-sm-12').removeClass('col-sm-6');
+    }
+    $("#data").load('main.php', function() {
+      $('#data').fadeIn(500);
+    });
+  });
+}
 
 function reset() {
   hiraganaArr = [];
+  hiraganaArrHistory = [];
   count = 0;
   ArrSize = 0;
   ArrIndex = 0;
   answerCorrect = 0;
+  random_hiragana = null;
 }
 
 function getHiraganaJson() {
@@ -26,15 +49,24 @@ function getHiraganaJson() {
 }
 
 
-function startQuizClick()
-{
+function startQuizClick() {
   reset();
   $.when(getHiraganaJson()).then(newHiragana);
 }
 
-function newHiragana()
-{
-  var random_hiragana = random_item(hiraganaArr);
+function btnReviewQuiz() {
+  $('#data').addClass('col-sm-6').removeClass('col-sm-12');
+  $('.w-25').addClass('w-50').removeClass('w-25');
+  $( "#data" ).after( "<div class=\"col-sm-4 align-self-center\" id=\"data2\">" );
+  $('#data2').fadeOut(500, function() {
+    $("#data2").load('quiz_review.php', {'hiragana-review': hiraganaArrHistory }, function() {
+      $('#data2').fadeIn(500);
+    });
+  });
+}
+
+function newHiragana() {
+  random_hiragana = random_item(hiraganaArr);
   count++;
   console.log("selected hiragana: " + random_hiragana.question + " = " + random_hiragana.answer);
   $('#data').fadeOut(500, function() {
@@ -45,8 +77,7 @@ function newHiragana()
   });
 }
 
-function random_item(items)
-{
+function random_item(items) {
   ArrIndex = Math.floor(Math.random()*items.length);
   return items[ArrIndex];
 }
@@ -55,6 +86,7 @@ function random_item(items)
 $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
   if(event.keyCode == 13) {
     if($(this).val().length > 0) {
+      hiraganaArrHistory.push({"question": random_hiragana.question, "answer": random_hiragana.answer, "your_answer": $(this).val()});
       if($(this).val() == $('#hidden-hiragana-quiz-answer').val()) {
         answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
