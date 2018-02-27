@@ -101,7 +101,7 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
   if(event.keyCode == 13) {
     if($(this).val().length > 0) {
       hiraganaArrHistory.push({"question": random_hiragana.question, "answer": random_hiragana.answer, "your_answer": $(this).val()});
-      if($(this).val() == $('#hidden-hiragana-quiz-answer').val()) {
+      if($(this).val().toUpperCase() == $('#hidden-hiragana-quiz-answer').val().toUpperCase()) {
         answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
         $('.form-control').addClass('is-valid');
