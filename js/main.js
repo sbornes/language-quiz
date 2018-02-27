@@ -62,7 +62,7 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
       }
       else {
         $('.bg-primary').addClass('bg-danger').removeClass('bg-primary');
-        $('.form-control').addClass('is-valid');
+        $('.form-control').addClass('is-invalid');
       }
 
       if(count < ArrSize) {
