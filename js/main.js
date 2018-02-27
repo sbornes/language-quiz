@@ -58,9 +58,11 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
       if($(this).val() == $('#hidden-hiragana-quiz-answer').val()) {
         answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
+        $('.form-control').addClass('is-valid');
       }
       else {
         $('.bg-primary').addClass('bg-danger').removeClass('bg-primary');
+        $('.form-control').addClass('is-valid');
       }
 
       if(count < ArrSize) {
