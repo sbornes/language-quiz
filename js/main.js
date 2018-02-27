@@ -5,6 +5,7 @@ var ArrSize = 0;
 var ArrIndex = 0;
 var answerCorrect = 0;
 var random_hiragana = null;
+var review = false;
 
 $( document ).ready(function() {
   mainPage();
@@ -55,14 +56,29 @@ function startQuizClick() {
 }
 
 function btnReviewQuiz() {
-  $('#data').addClass('col-sm-6').removeClass('col-sm-12');
-  $('.w-25').addClass('w-50').removeClass('w-25');
-  $( "#data" ).after( "<div class=\"col-sm-4 align-self-center\" id=\"data2\">" );
-  $('#data2').fadeOut(500, function() {
-    $("#data2").load('quiz_review.php', {'hiragana-review': hiraganaArrHistory }, function() {
-      $('#data2').fadeIn(500);
+  review = !review;
+
+  if(review) {
+    alert( "First handler for .toggle() called." );
+    $('#btnReviewQuiz').text('Close Review');
+    $('#data').addClass('col-sm-6').removeClass('col-sm-12');
+    $('.w-25').addClass('w-50').removeClass('w-25');
+    $( "#data" ).after( "<div class=\"col-sm-4 align-self-center\" id=\"data2\">" );
+    $('#data2').fadeOut(500, function() {
+      $("#data2").load('quiz_review.php', {'hiragana-review': hiraganaArrHistory }, function() {
+        $('#data2').fadeIn(500);
+      });
     });
-  });
+  }
+  else {
+    alert( "Second handler for .toggle() called." );
+    $('#data2').fadeOut(500, function() {
+      $( "#data2" ).remove();
+      $('#btnReviewQuiz').text('Review Quiz!');
+      $('#data').addClass('col-sm-12').removeClass('col-sm-6');
+      $('.w-50').addClass('w-25').removeClass('w-50');
+    });
+  }
 }
 
 function newHiragana() {
