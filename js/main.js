@@ -2,9 +2,17 @@ var hiraganaArr = [];
 var count = 0;
 var ArrSize = 0;
 var ArrIndex = 0;
+var answerCorrect = 0;
+
+function reset() {
+  hiraganaArr = [];
+  count = 0;
+  ArrSize = 0;
+  ArrIndex = 0;
+  answerCorrect = 0;
+}
 
 function getHiraganaJson() {
-  hiraganaArr = [];
   return $.getJSON( "json/hiragana.json", function( data ) {
     $.each( data, function( key, val ) {
       //hiraganaArr[key] = val;
@@ -20,6 +28,7 @@ function getHiraganaJson() {
 
 function startQuizClick()
 {
+  reset();
   $.when(getHiraganaJson()).then(newHiragana);
 }
 
@@ -47,11 +56,10 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
   if(event.keyCode == 13) {
     if($(this).val().length > 0) {
       if($(this).val() == $('#hidden-hiragana-quiz-answer').val()) {
-        console.log("CORRECT");
+        answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
       }
       else {
-        console.log("INCORRECT");
         $('.bg-primary').addClass('bg-danger').removeClass('bg-primary');
       }
 
@@ -63,10 +71,29 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
       else {
         // Finished Quiz
         $('#data').fadeOut(500, function() {
-           $(this).empty();
+          $("#data").load('quiz_finish.php', function() {
+            $('#data').fadeIn(500);
+            animate_percent();
+          });
         });
       }
     }
     return false; // prevent the button click from happening
   }
 });
+
+// ANIMATE PERCENT
+function animate_percent() {
+  var $percent = $('.answerPercent');
+  curr = parseInt($percent.text()),
+  to = Math.round(answerCorrect / ArrSize * 100);
+
+  counter = window.setInterval(function() {
+    if(curr <= to) {
+      $percent.text((curr++)+'%');
+    }
+    else {
+      window.clearInterval(counter);
+    }
+  }, 20);
+}
