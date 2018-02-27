@@ -12,11 +12,9 @@ $( document ).ready(function() {
 });
 
 function mainPage() {
-  if($('#data2').length == 0) {
-    $('#data2').fadeOut(500, function() {
-      $( "#data2" ).remove();
-    });
-  }
+  $('#data2').fadeOut(500, function() {
+    $( "#data2" ).remove();
+  });
 
   $('#data').fadeOut(500, function() {
     if ($('#data').hasClass('col-sm-6')) {
