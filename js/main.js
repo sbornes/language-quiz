@@ -12,9 +12,11 @@ $( document ).ready(function() {
 });
 
 function mainPage() {
-  $('#data2').fadeOut(500, function() {
-    $( "#data2" ).remove();
-  });
+  if($('#data2').length == 0) {
+    $('#data2').fadeOut(500, function() {
+      $( "#data2" ).remove();
+    });
+  }
 
   $('#data').fadeOut(500, function() {
     if ($('#data').hasClass('col-sm-6')) {
@@ -42,9 +44,9 @@ function getHiraganaJson() {
       //hiraganaArr[key] = val;
       hiraganaArr.push({"question": key, "answer": val});
     });
-    $.each(hiraganaArr, function(index, val) {
-        console.log(index + ". " + val.question + " = " + val.answer);
-    });
+    // $.each(hiraganaArr, function(index, val) {
+    //     console.log(index + ". " + val.question + " = " + val.answer);
+    // });
     ArrSize = hiraganaArr.length;
   });
 }
@@ -59,11 +61,10 @@ function btnReviewQuiz() {
   review = !review;
 
   if(review) {
-    alert( "First handler for .toggle() called." );
     $('#btnReviewQuiz').text('Close Review');
     $('#data').addClass('col-sm-6').removeClass('col-sm-12');
     $('.w-25').addClass('w-50').removeClass('w-25');
-    $( "#data" ).after( "<div class=\"col-sm-4 align-self-center\" id=\"data2\">" );
+    $( "#data" ).after( "<div class=\"col-sm-4 align-self-center h-50\" id=\"data2\" style=\"overflow-y: scroll;\">" );
     $('#data2').fadeOut(500, function() {
       $("#data2").load('quiz_review.php', {'hiragana-review': hiraganaArrHistory }, function() {
         $('#data2').fadeIn(500);
@@ -71,7 +72,6 @@ function btnReviewQuiz() {
     });
   }
   else {
-    alert( "Second handler for .toggle() called." );
     $('#data2').fadeOut(500, function() {
       $( "#data2" ).remove();
       $('#btnReviewQuiz').text('Review Quiz!');
@@ -84,7 +84,7 @@ function btnReviewQuiz() {
 function newHiragana() {
   random_hiragana = random_item(hiraganaArr);
   count++;
-  console.log("selected hiragana: " + random_hiragana.question + " = " + random_hiragana.answer);
+  //console.log("selected hiragana: " + random_hiragana.question + " = " + random_hiragana.answer);
   $('#data').fadeOut(500, function() {
     $("#data").load('quiz_card.php', {'hiragana': random_hiragana.question, 'answer': random_hiragana.answer, 'qCount' : count, 'qTotal' : ArrSize}, function() {
       $('#data').fadeIn(500);
@@ -114,7 +114,7 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
       }
 
       if(count < ArrSize) {
-        console.log("arrIndex: " + ArrIndex);
+        //console.log("arrIndex: " + ArrIndex);
         hiraganaArr.splice(ArrIndex, 1);
         newHiragana();
       }
