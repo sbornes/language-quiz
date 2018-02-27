@@ -14,7 +14,7 @@
   </div>
   <div class="card-footer">
     <input class="form-control" type="text" value="" id="hiragana-quiz-answer">
-    <input type="hidden" name="hiragana-quiz-answer" value=<?php echo $answer; ?>>
+    <input type="hidden" id="hidden-hiragana-quiz-answer" value=<?php echo $answer; ?>>
   </div>
 </div>
 <?php endif; ?>
