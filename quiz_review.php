@@ -2,7 +2,8 @@
   $hiraganaArr = !empty($_REQUEST['hiragana-review']) ? $_REQUEST['hiragana-review'] : null;
 ?>
 
-<table class="table text-center">
+
+<table class="table table-responsive h-100 text-center">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>

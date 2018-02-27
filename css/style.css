@@ -40,3 +40,7 @@ h2 {
 .button-back:hover {
   opacity: 1.0;
 }
+
+.table td, .table th {
+  word-break: break-all;
+}

@@ -60,9 +60,9 @@ function btnReviewQuiz() {
 
   if(review) {
     $('#btnReviewQuiz').text('Close Review');
-    $('#data').addClass('col-sm-6').removeClass('col-sm-12');
+    $('#data').addClass('col-sm-7').removeClass('col-sm-12');
     $('.w-25').addClass('w-50').removeClass('w-25');
-    $( "#data" ).after( "<div class=\"col-sm-4 align-self-center h-50\" id=\"data2\" style=\"overflow-y: scroll;\">" );
+    $( "#data" ).after( "<div class=\"col align-self-center h-50\" id=\"data2\">");
     $('#data2').fadeOut(500, function() {
       $("#data2").load('quiz_review.php', {'hiragana-review': hiraganaArrHistory }, function() {
         $('#data2').fadeIn(500);
@@ -73,7 +73,7 @@ function btnReviewQuiz() {
     $('#data2').fadeOut(500, function() {
       $( "#data2" ).remove();
       $('#btnReviewQuiz').text('Review Quiz!');
-      $('#data').addClass('col-sm-12').removeClass('col-sm-6');
+      $('#data').addClass('col-sm-12').removeClass('col-sm-7');
       $('.w-50').addClass('w-25').removeClass('w-50');
     });
   }
