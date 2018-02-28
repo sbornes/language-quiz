@@ -50,7 +50,16 @@ h2 {
 }
 
 .review-button {
-  max-width: 25%;
+  max-width: 33%;
   min-width: 290px;
   width: 352px;
+}
+
+.table .thead-dark th {
+  border-bottom: 1px solid #212529;
+  border-top: 1px solid #212529;
+}
+
+.sticky-top {
+  top: -5px;
 }
