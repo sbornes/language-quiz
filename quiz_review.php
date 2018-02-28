@@ -3,7 +3,7 @@
 ?>
 
 
-<table class="table table-responsive h-100 smooth-transition text-center">
+<table class="table table-responsive h-100 text-center">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
