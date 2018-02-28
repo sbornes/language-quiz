@@ -65,13 +65,13 @@ function btnReviewQuiz() {
     // Wait for toggleClass animation to end before showing table, Ensures smooth column transition
     $('#data').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
               function(event) {
-    $('#data').after( "<div class=\"col align-self-center h-50\" id=\"data2\"></div>");
-    $('#data2').fadeOut(500, function() {
-      $("#data2").load('quiz_review.php', {'hiragana-review': hiraganaArrHistory }, function() {
-        $('#data2').fadeIn(500);
+      $('#data').after( "<div class=\"col align-self-center pr-lg-5 h-50 pl-sm-0 mr-md-5\" id=\"data2\" style=\"overflow: auto;\"></div>");
+      $('#data2').fadeOut(500, function() {
+        $("#data2").load('quiz_review.php', {'hiragana-review': hiraganaArrHistory }, function() {
+          $('#data2').fadeIn(500);
+        });
       });
     });
-  });
   }
   else {
     $('#data2').fadeOut(500, function() {
