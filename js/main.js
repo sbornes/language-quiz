@@ -17,8 +17,8 @@ function mainPage() {
   });
 
   $('#data').fadeOut(500, function() {
-    if ($('#data').hasClass('col-sm-6')) {
-      $('#data').addClass('col-sm-12').removeClass('col-sm-6');
+    if ($('#data').hasClass('col-sm-7')) {
+      $('#data').addClass('col-sm-12').removeClass('col-sm-7');
     }
     $("#data").load('main.php', function() {
       $('#data').fadeIn(500);
@@ -101,7 +101,7 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
   if(event.keyCode == 13) {
     if($(this).val().length > 0) {
       hiraganaArrHistory.push({"question": random_hiragana.question, "answer": random_hiragana.answer, "your_answer": $(this).val()});
-      if($(this).val().toUpperCase() == $('#hidden-hiragana-quiz-answer').val().toUpperCase()) {
+      if($(this).val().toUpperCase() == $('#hidden-hiragana-quiz-answer').val().toUpperCase() ) {
         answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
         $('.form-control').addClass('is-valid');
