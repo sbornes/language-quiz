@@ -49,3 +49,9 @@ h2 {
   flex-grow: 1;
   transition: all 400ms ease;
 }
+
+.review-button {
+  max-width: 25%;
+  min-width: 290px;
+  width: 352px;
+}
