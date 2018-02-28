@@ -115,6 +115,8 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
         $('.form-control').addClass('is-invalid');
       }
 
+      $(this).val('');
+
       if(count < ArrSize) {
         //console.log("arrIndex: " + ArrIndex);
         hiraganaArr.splice(ArrIndex, 1);
@@ -139,6 +141,8 @@ function animate_percent() {
   var $percent = $('.answerPercent');
   curr = parseInt($percent.text()),
   to = Math.round(answerCorrect / ArrSize * 100);
+
+  console.log(answerCorrect + "/" + ArrSize + "=" + to);
 
   counter = window.setInterval(function() {
     if(curr <= to) {
