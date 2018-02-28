@@ -44,3 +44,8 @@ h2 {
 .table td, .table th {
   word-break: break-all;
 }
+
+.smooth-transition {
+  flex-grow: 1;
+  transition: all 400ms ease;
+}
