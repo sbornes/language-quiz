@@ -6,6 +6,7 @@ var ArrIndex = 0;
 var answerCorrect = 0;
 var random_hiragana = null;
 var review = false;
+var btnBackLoc = "";
 
 $( document ).ready(function() {
   mainPage();
@@ -34,6 +35,8 @@ function reset() {
   ArrIndex = 0;
   answerCorrect = 0;
   random_hiragana = null;
+  review = false;
+  btnBackLoc = "";
 }
 
 function getHiraganaJson() {
@@ -53,6 +56,10 @@ function getHiraganaJson() {
 function startQuizClick() {
   reset();
   $.when(getHiraganaJson()).then(newHiragana);
+}
+
+function btnBack() {
+
 }
 
 function btnReviewQuiz() {
