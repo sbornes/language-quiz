@@ -31,7 +31,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <!-- <small>Theme: <span id="theme">Dark</span></small> -->
-          <span class="text-muted">By sbornes.</span>
+          <span class="text-muted">By Phillip Truong.</span>
         </div>
       </div>
     </footer>
