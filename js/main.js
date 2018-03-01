@@ -4,7 +4,7 @@ var count = 0;
 var ArrSize = 0;
 var ArrIndex = 0;
 var answerCorrect = 0;
-var random_hiragana = null;
+var random_question = null;
 var review = false;
 var btnBackLoc = "";
 
@@ -35,7 +35,7 @@ $( document ).ready(function() {
   var language = $(this).attr('data-language');
   var language_sub = $(this).attr('data-language-sub');
   reset();
-  $.when(getLanguageJson(language, language_sub)).then(newQuestion);
+  $.when(getLanguageJson(language, language_sub)).then(function() { newQuestion(language_sub); });
 });
 });
 
@@ -61,7 +61,7 @@ function reset() {
   ArrSize = 0;
   ArrIndex = 0;
   answerCorrect = 0;
-  random_hiragana = null;
+  random_question = null;
   review = false;
   btnBackLoc = "";
 }
@@ -125,14 +125,14 @@ function btnReviewQuiz() {
   }
 }
 
-function newQuestion() {
-  random_hiragana = random_item(quizArr);
+function newQuestion(language) {
+  random_question = random_item(quizArr);
   count++;
-  //console.log("selected hiragana: " + random_hiragana.question + " = " + random_hiragana.answer);
+  //console.log("selected hiragana: " + random_question.question + " = " + random_question.answer);
   $('#data').fadeOut(500, function() {
-    $("#data").load('quiz_card.php', {'hiragana': random_hiragana.question, 'answer': random_hiragana.answer, 'qCount' : count, 'qTotal' : ArrSize}, function() {
+    $("#data").load('quiz_card.php', { 'language': language, 'question': random_question.question, 'answer': random_question.answer, 'qCount' : count, 'qTotal' : ArrSize}, function() {
       $('#data').fadeIn(500);
-      $('#hiragana-quiz-answer').focus();
+      $('#question-quiz-answer').focus();
     });
   });
 }
@@ -143,11 +143,11 @@ function random_item(items) {
 }
 
 // TEXT BOX ANSWER
-$(document).on('keyup', '#hiragana-quiz-answer', function(event) {
+$(document).on('keyup', '#question-quiz-answer', function(event) {
   if(event.keyCode == 13) {
     if($(this).val().length > 0) {
-      quizArrHistory.push({"question": random_hiragana.question, "answer": random_hiragana.answer, "your_answer": $(this).val()});
-      if($(this).val().toUpperCase() == $('#hidden-hiragana-quiz-answer').val().toUpperCase() ) {
+      quizArrHistory.push({"question": random_question.question, "answer": random_question.answer, "your_answer": $(this).val()});
+      if($(this).val().toUpperCase() == $('#hidden-question-quiz-answer').val().toUpperCase() ) {
         answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
         $('.form-control').addClass('is-valid');
@@ -159,10 +159,12 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
 
       $(this).val('');
 
+      var language = $('span#language').text();
+
       if(count < ArrSize) {
         //console.log("arrIndex: " + ArrIndex);
         quizArr.splice(ArrIndex, 1);
-        newQuestion();
+        newQuestion(language);
       }
       else {
         // Finished Quiz
