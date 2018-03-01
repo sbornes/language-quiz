@@ -17,6 +17,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
+    <div class="bg-worldmap"></div>
     <!-- BODY -->
     <div class="container h-100">
       <div class="row h-100">
@@ -27,8 +28,9 @@
     </div>
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container center">
+      <div class="container">
         <div class="row justify-content-center">
+          <!-- <small>Theme: <span id="theme">Dark</span></small> -->
           <span class="text-muted">By sbornes.</span>
         </div>
       </div>
