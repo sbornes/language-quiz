@@ -1,0 +1,37 @@
+- Back button
+    - History API
+    - PushStates
+
+- Fill in more Quiz's
+
+- Add support for multiple answers
+    - Separated in JSON using |
+
+- Add support for different types of quiz
+    - JSON example
+        {
+            'type': 'multiple-choice',
+            'quiz': {
+                'This is a random question': {
+                    "choice": {
+                        "1": "Answer 1",
+                        .
+                        .
+                        .
+                        "4": "Answer 4"
+                    }
+                    "Answer": "1"
+                }
+                'This is a another random question': {
+                    "choice": {
+                        "1": "Answer 1",
+                        .
+                        .
+                        .
+                        "4": "Answer 4"
+                    }
+                    "Answer": "3"
+                }
+            }
+        }
+    - Multiple Choice
