@@ -1,6 +1,6 @@
 <?php
 
-$json_files = glob('json/*');
+$json_files = glob('json/*', GLOB_ONLYDIR);
 $quizArr = array();
 
 foreach ($json_files as $key => $value) {
