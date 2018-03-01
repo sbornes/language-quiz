@@ -48,6 +48,9 @@ function mainPage() {
     if ($('#data').hasClass('col-sm-7')) {
       $('#data').addClass('col-sm-12').removeClass('col-sm-7');
     }
+    if ($('#data').hasClass('smooth-transition')) {
+      $('#data').removeClass('smooth-transition');
+    }
     $("#data").load('main.php', function() {
       $('#data').fadeIn(500);
     });
