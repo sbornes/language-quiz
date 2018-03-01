@@ -58,10 +58,6 @@ function startQuizClick() {
   $.when(getHiraganaJson()).then(newHiragana);
 }
 
-function btnBack() {
-
-}
-
 function btnReviewQuiz() {
   review = !review;
 

@@ -8,7 +8,7 @@
 
 <?php if($hiragana != null && $answer != null) : ?>
 <div class="fixed-top p-2 p-sm-5" id="btnBack">
-  <a href="javascript:void(0);" onclick="btnBack();" class="button-back" >
+  <a href="javascript:void(0);" onclick="mainPage();" class="button-back" >
     <i class="fas fa-arrow-circle-left"></i>
   </a>
 </div>
