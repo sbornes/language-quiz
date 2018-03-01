@@ -11,7 +11,15 @@ var btnBackLoc = "";
 $( document ).ready(function() {
   mainPage();
 
-   $( '#data' ).on( 'click', '#btnLanguage', function () {
+  // https://stackoverflow.com/a/12206385
+  $(function(){
+    function bgscroll(){
+      $('.bg-worldmap').stop().animate({'background-position':'-=1000'}, 10000, 'linear', bgscroll);
+    }
+    bgscroll(); // initiate!!
+  });
+
+  $( '#data' ).on( 'click', '#btnLanguage', function () {
     var language = $(this).attr('data-language');
     console.log('language is ' + language);
     $('#data').fadeOut(500, function() {

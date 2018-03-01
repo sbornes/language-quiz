@@ -20,7 +20,7 @@ h2 {
 .bg-worldmap {
   background-image: url(../img/worldmap.svg);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   bottom: 0;
   height: 100%;
   left: 0;
