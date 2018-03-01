@@ -1,5 +1,5 @@
 <?php
-  $hiraganaArr = !empty($_REQUEST['hiragana-review']) ? $_REQUEST['hiragana-review'] : null;
+  $hiraganaArr = !empty($_REQUEST['quiz-review']) ? $_REQUEST['quiz-review'] : null;
 ?>
 
 <div class="table-responsive text-center h-100">

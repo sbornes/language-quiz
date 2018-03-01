@@ -90,12 +90,6 @@ function getLanguageJson(language, language_sub) {
   });
 }
 
-
-// function startQuizClick() {
-//   reset();
-//   $.when(getHiraganaJson()).then(newQuestion);
-// }
-
 function startQuizClick() {
   $('#data').fadeOut(500, function() {
     $("#data").load('quiz_list.php', function() {
@@ -120,7 +114,7 @@ function btnReviewQuiz() {
               function(event) {
       $('#data').after( "<div class=\"col align-self-center h-50 mr-lg-5\" id=\"data2\" style=\"overflow: auto;\"></div>");
       $('#data2').fadeOut(500, function() {
-        $("#data2").load('quiz_review.php', {'hiragana-review': quizArrHistory }, function() {
+        $("#data2").load('quiz_review.php', {'quiz-review': quizArrHistory }, function() {
           $('#data2').fadeIn(500);
         });
       });
@@ -139,7 +133,7 @@ function btnReviewQuiz() {
 function newQuestion(language) {
   random_question = random_item(quizArr);
   count++;
-  //console.log("selected hiragana: " + random_question.question + " = " + random_question.answer);
+
   $('#data').fadeOut(500, function() {
     $("#data").load('quiz_card.php', { 'language': language, 'question': random_question.question, 'answer': random_question.answer, 'qCount' : count, 'qTotal' : ArrSize}, function() {
       $('#data').fadeIn(500);
