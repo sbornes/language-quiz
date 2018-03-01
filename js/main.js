@@ -1,5 +1,5 @@
-var hiraganaArr = [];
-var hiraganaArrHistory = [];
+var quizArr = [];
+var quizArrHistory = [];
 var count = 0;
 var ArrSize = 0;
 var ArrIndex = 0;
@@ -10,6 +10,33 @@ var btnBackLoc = "";
 
 $( document ).ready(function() {
   mainPage();
+
+   $( '#data' ).on( 'click', '#btnLanguage', function () {
+    var language = $(this).attr('data-language');
+    console.log('language is ' + language);
+    $('#data').fadeOut(500, function() {
+      $("#data").load('quiz_specific_list.php', {'language': language }, function() {
+        $('#data').fadeIn(500);
+      });
+    });
+  });
+
+  $( '#data' ).on( 'click', '#btnLanguageSpecific', function () {
+   var language = $(this).attr('data-language');
+   var language_sub = $(this).attr('data-language-sub');
+   $('#data').fadeOut(500, function() {
+     $("#data").load('main_language.php', {'language': language, 'language_sub': language_sub }, function() {
+       $('#data').fadeIn(500);
+     });
+   });
+ });
+
+ $( '#data' ).on( 'click', '#btnStartLanguageQuiz', function () {
+  var language = $(this).attr('data-language');
+  var language_sub = $(this).attr('data-language-sub');
+  reset();
+  $.when(getLanguageJson(language, language_sub)).then(newQuestion);
+});
 });
 
 function mainPage() {
@@ -28,8 +55,8 @@ function mainPage() {
 }
 
 function reset() {
-  hiraganaArr = [];
-  hiraganaArrHistory = [];
+  quizArr = [];
+  quizArrHistory = [];
   count = 0;
   ArrSize = 0;
   ArrIndex = 0;
@@ -39,23 +66,35 @@ function reset() {
   btnBackLoc = "";
 }
 
-function getHiraganaJson() {
-  return $.getJSON( "json/hiragana.json", function( data ) {
+function getLanguageJson(language, language_sub) {
+  return $.getJSON( "json/" + language + "/" + language_sub + ".json", function( data ) {
     $.each( data, function( key, val ) {
-      //hiraganaArr[key] = val;
-      hiraganaArr.push({"question": key, "answer": val});
+      //quizArr[key] = val;
+      quizArr.push({"question": key, "answer": val});
     });
-    // $.each(hiraganaArr, function(index, val) {
+    // $.each(quizArr, function(index, val) {
     //     console.log(index + ". " + val.question + " = " + val.answer);
     // });
-    ArrSize = hiraganaArr.length;
+    ArrSize = quizArr.length;
   });
 }
 
 
+// function startQuizClick() {
+//   reset();
+//   $.when(getHiraganaJson()).then(newQuestion);
+// }
+
 function startQuizClick() {
-  reset();
-  $.when(getHiraganaJson()).then(newHiragana);
+  $('#data').fadeOut(500, function() {
+    $("#data").load('quiz_list.php', function() {
+      $('#data').fadeIn(500);
+    });
+  });
+}
+
+function btnSpecificQuiz() {
+
 }
 
 function btnReviewQuiz() {
@@ -70,7 +109,7 @@ function btnReviewQuiz() {
               function(event) {
       $('#data').after( "<div class=\"col align-self-center h-50 mr-lg-5\" id=\"data2\" style=\"overflow: auto;\"></div>");
       $('#data2').fadeOut(500, function() {
-        $("#data2").load('quiz_review.php', {'hiragana-review': hiraganaArrHistory }, function() {
+        $("#data2").load('quiz_review.php', {'hiragana-review': quizArrHistory }, function() {
           $('#data2').fadeIn(500);
         });
       });
@@ -86,8 +125,8 @@ function btnReviewQuiz() {
   }
 }
 
-function newHiragana() {
-  random_hiragana = random_item(hiraganaArr);
+function newQuestion() {
+  random_hiragana = random_item(quizArr);
   count++;
   //console.log("selected hiragana: " + random_hiragana.question + " = " + random_hiragana.answer);
   $('#data').fadeOut(500, function() {
@@ -107,7 +146,7 @@ function random_item(items) {
 $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
   if(event.keyCode == 13) {
     if($(this).val().length > 0) {
-      hiraganaArrHistory.push({"question": random_hiragana.question, "answer": random_hiragana.answer, "your_answer": $(this).val()});
+      quizArrHistory.push({"question": random_hiragana.question, "answer": random_hiragana.answer, "your_answer": $(this).val()});
       if($(this).val().toUpperCase() == $('#hidden-hiragana-quiz-answer').val().toUpperCase() ) {
         answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
@@ -122,8 +161,8 @@ $(document).on('keyup', '#hiragana-quiz-answer', function(event) {
 
       if(count < ArrSize) {
         //console.log("arrIndex: " + ArrIndex);
-        hiraganaArr.splice(ArrIndex, 1);
-        newHiragana();
+        quizArr.splice(ArrIndex, 1);
+        newQuestion();
       }
       else {
         // Finished Quiz
