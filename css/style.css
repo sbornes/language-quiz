@@ -74,6 +74,7 @@ h2 {
 
 .question-text {
   font-size: 4em;
+  white-space: nowrap;
 }
 
 ::-webkit-scrollbar {
