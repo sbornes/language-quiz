@@ -16,7 +16,7 @@
 </div>
 
 <div class="card text-white bg-primary mx-auto" style="max-width: 18rem;">
-  <div class="card-header text-uppercase"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> Quiz<span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
+  <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate" id="language"><?php echo str_replace('_', ' ', $language); ?> Quiz</span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
   <div class="card-body">
     <h5 class="card-text question-text text-center"><?php echo $question; ?></h5>
   </div>
