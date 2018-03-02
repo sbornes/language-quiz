@@ -6,7 +6,6 @@ var ArrIndex = 0;
 var answerCorrect = 0;
 var random_question = null;
 var review = false;
-var btnBackLoc = "";
 
 $(document).ready(function() {
 
@@ -139,7 +138,6 @@ function reset() {
   answerCorrect = 0;
   random_question = null;
   review = false;
-  btnBackLoc = "";
 }
 
 function getLanguageJson(language, language_sub) {
@@ -158,7 +156,7 @@ function getLanguageJson(language, language_sub) {
   });
 }
 
-function startQuizClick() {
+function btnStartQuiz() {
   var data = {
     'url': 'quiz_list.php'
   };
@@ -172,10 +170,6 @@ function startQuizClick() {
       $('.button-back').fadeIn(500);
     });
   });
-}
-
-function btnSpecificQuiz() {
-
 }
 
 function btnReviewQuiz() {
