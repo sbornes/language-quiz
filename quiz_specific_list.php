@@ -17,6 +17,6 @@
 <div class="mx-auto text-center">
   <h1>Which <span class="text-capitalize"><?php echo $clean_language; ?></span> Quiz ?</h1>
   <?php foreach ($quizArr as $key => $value) : ?>
-    <button type="button" id="btnLanguageSpecific" class="btn btn-outline-primary btn-lg" data-language=<?php echo $clean_language; ?> data-language-sub=<?php echo $value; ?>><span class="text-capitalize"><?php echo str_replace('_', ' ', $value); ?></span></button>
+    <button type="button" id="btnLanguageSpecific" class="btn btn-outline-primary btn-lg m-2" data-language=<?php echo $clean_language; ?> data-language-sub=<?php echo $value; ?>><span class="text-capitalize"><?php echo str_replace('_', ' ', $value); ?></span></button>
   <?php endforeach ?>
 </div>

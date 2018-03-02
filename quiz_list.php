@@ -16,6 +16,6 @@ foreach ($json_files as $key => $value) {
 <div class="mx-auto text-center">
   <h1>Which Quiz ?</h1>
   <?php foreach ($quizArr as $key => $value) : ?>
-    <button type="button" id="btnLanguage" class="btn btn-outline-primary btn-lg" data-language=<?php echo $value; ?>><span class="text-capitalize"><?php echo $value; ?></span></button>
+    <button type="button" id="btnLanguage" class="btn btn-outline-primary btn-lg m-2" data-language=<?php echo $value; ?>><span class="text-capitalize"><?php echo $value; ?></span></button>
   <?php endforeach ?>
 </div>
