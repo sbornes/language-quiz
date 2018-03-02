@@ -73,8 +73,7 @@ h2 {
 }
 
 .question-text {
-  font-size: 128px;
-  font-size: 10vw;
+  font-size: 4em;
 }
 
 ::-webkit-scrollbar {
