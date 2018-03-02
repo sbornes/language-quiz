@@ -14,11 +14,11 @@
     </thead>
     <tbody>
       <?php for ($i=0; $i < sizeof($hiraganaArr); $i++) : ?>
-        <tr class="<?php echo $hiraganaArr[$i]['answer'] == $hiraganaArr[$i]['your_answer'] ? "bg-success" : "bg-danger"; ?>">
+        <tr class="<?php echo strtoupper($hiraganaArr[$i]['answer']) == strtoupper($hiraganaArr[$i]['your_answer']) ? "bg-success" : "bg-danger"; ?>">
           <th scope="row"><?php echo $i+1; ?>.</th>
           <td><?php echo $hiraganaArr[$i]['question']; ?></td>
-          <td><?php echo $hiraganaArr[$i]['answer']; ?></td>
-          <td><?php echo $hiraganaArr[$i]['your_answer']; ?></td>
+          <td><span class="text-lowercase"><?php echo $hiraganaArr[$i]['answer']; ?></span></td>
+          <td><span class="text-lowercase"><?php echo $hiraganaArr[$i]['your_answer']; ?></span></td>
         </tr>
       <?php endfor; ?>
     </tbody>

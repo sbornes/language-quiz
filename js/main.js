@@ -151,8 +151,9 @@ function random_item(items) {
 $(document).on('keyup', '#question-quiz-answer', function(event) {
   if(event.keyCode == 13) {
     if($(this).val().length > 0) {
-      quizArrHistory.push({"question": random_question.question, "answer": random_question.answer, "your_answer": $(this).val()});
-      if($(this).val().toUpperCase() == $('#hidden-question-quiz-answer').val().toUpperCase() ) {
+      var CleanString = $(this).val().replace(/\s/g, '');
+      quizArrHistory.push({"question": random_question.question, "answer": random_question.answer, "your_answer": CleanString });
+      if(CleanString.toUpperCase() == $('#hidden-question-quiz-answer').val().toUpperCase() ) {
         answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
         $('.form-control').addClass('is-valid');
