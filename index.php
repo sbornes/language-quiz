@@ -21,6 +21,11 @@
     <div id="ajax-spinner" style="display: none;">
         <div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-radio"><div></div><div></div><div></div></div></div>
    </div>
+   <div class="fixed-top p-2 p-sm-5" id="btnBack">
+     <a href="javascript:void(0);" onclick="window.history.back();" class="button-back" style="display: none;">
+       <i class="fas fa-arrow-circle-left"></i>
+     </a>
+   </div>
     <!-- BODY -->
     <div class="container h-100">
       <div class="row h-100">

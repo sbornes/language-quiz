@@ -9,6 +9,14 @@ var review = false;
 var btnBackLoc = "";
 
 $(document).ready(function() {
+
+  var data = {
+    'url': 'main.php'
+  };
+
+  history.replaceState(data, null, window.location.href);
+  console.log("history pushed");
+
   mainPage();
 
   // https://stackoverflow.com/a/12206385
@@ -38,12 +46,15 @@ $(document).ready(function() {
 
   $('#data').on('click', '#btnLanguage', function() {
     var language = $(this).attr('data-language');
-    console.log('language is ' + language);
+    var data = {
+      'url': 'quiz_specific_list.php',
+      'language': language
+    };
     $('#data').fadeOut(500, function() {
-      $("#data").load('quiz_specific_list.php', {
-        'language': language
-      }, function() {
+      $("#data").load('quiz_specific_list.php', data, function() {
         $('#data').fadeIn(500);
+        history.pushState(data, null, window.location.href);
+        console.log("history pushed");
       });
     });
   });
@@ -51,12 +62,18 @@ $(document).ready(function() {
   $('#data').on('click', '#btnLanguageSpecific', function() {
     var language = $(this).attr('data-language');
     var language_sub = $(this).attr('data-language-sub');
+
+    var data = {
+      'url': 'main_language.php',
+      'language': language,
+      'language_sub': language_sub
+    };
+
     $('#data').fadeOut(500, function() {
-      $("#data").load('main_language.php', {
-        'language': language,
-        'language_sub': language_sub
-      }, function() {
+      $("#data").load('main_language.php', data, function() {
         $('#data').fadeIn(500);
+        history.pushState(data, null, window.location.href);
+        console.log("history pushed");
       });
     });
   });
@@ -64,12 +81,36 @@ $(document).ready(function() {
   $('#data').on('click', '#btnStartLanguageQuiz', function() {
     var language = $(this).attr('data-language');
     var language_sub = $(this).attr('data-language-sub');
+
+    var data = {
+      'url': 'main.language.php',
+      'language': language,
+      'language_sub': language_sub
+    };
+
+    history.pushState(data, null, window.location.href);
+    console.log("history pushed");
+
     reset();
     $.when(getLanguageJson(language, language_sub)).then(function() {
       newQuestion(language_sub);
     });
   });
 });
+
+window.onpopstate = function (event) {
+  console.log(event.state);
+  if(event.state) {
+    if(event.state.url == "main.php") {
+      $('.button-back').fadeOut(500);
+    }
+    $('#data').fadeOut(500, function() {
+      $("#data").load(event.state.url, event.state, function() {
+        $('#data').fadeIn(500);
+      });
+    });
+  }
+};
 
 function mainPage() {
   $('#data2').fadeOut(500, function() {
@@ -118,9 +159,17 @@ function getLanguageJson(language, language_sub) {
 }
 
 function startQuizClick() {
+  var data = {
+    'url': 'quiz_list.php'
+  };
+
+  history.pushState(data, null, window.location.href);
+  console.log("history pushed");
+
   $('#data').fadeOut(500, function() {
     $("#data").load('quiz_list.php', function() {
       $('#data').fadeIn(500);
+      $('.button-back').fadeIn(500);
     });
   });
 }

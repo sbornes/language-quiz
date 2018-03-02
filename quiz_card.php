@@ -9,12 +9,6 @@
 ?>
 
 <?php if($question != null && $answer != null) : ?>
-<div class="fixed-top p-2 p-sm-5" id="btnBack">
-  <a href="javascript:void(0);" onclick="mainPage();" class="button-back" >
-    <i class="fas fa-arrow-circle-left"></i>
-  </a>
-</div>
-
 <div class="card text-white bg-primary mx-auto" style="max-width: 18rem;">
   <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> Quiz </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
   <div class="card-body">
