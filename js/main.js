@@ -50,8 +50,8 @@ $(document).ready(function() {
       'language': language
     };
     $('#data').fadeOut(500, function() {
-      $("#data").load('quiz_specific_list.php', data, function() {
-        $('#data').fadeIn(500);
+      $(this).load('quiz_specific_list.php', data, function() {
+        $(this).fadeIn(500);
         history.pushState(data, null, window.location.href);
         console.log("history pushed");
       });
@@ -69,8 +69,8 @@ $(document).ready(function() {
     };
 
     $('#data').fadeOut(500, function() {
-      $("#data").load('main_language.php', data, function() {
-        $('#data').fadeIn(500);
+      $(this).load('main_language.php', data, function() {
+        $(this).fadeIn(500);
         history.pushState(data, null, window.location.href);
         console.log("history pushed");
       });
@@ -103,9 +103,21 @@ window.onpopstate = function (event) {
     if(event.state.url == "main.php") {
       $('.button-back').fadeOut(500);
     }
+
+    $('#data2').fadeOut(500, function() {
+      $(this).remove();
+    });
+
     $('#data').fadeOut(500, function() {
-      $("#data").load(event.state.url, event.state, function() {
-        $('#data').fadeIn(500);
+      if ($(this).hasClass('col-sm-7')) {
+        $(this).addClass('col-sm-12').removeClass('col-sm-7');
+      }
+      if ($(this).hasClass('smooth-transition')) {
+        $(this).removeClass('smooth-transition');
+      }
+
+      $(this).load(event.state.url, event.state, function() {
+        $(this).fadeIn(500);
       });
     });
   }
@@ -113,18 +125,18 @@ window.onpopstate = function (event) {
 
 function mainPage() {
   $('#data2').fadeOut(500, function() {
-    $("#data2").remove();
+    $(this).remove();
   });
 
   $('#data').fadeOut(500, function() {
-    if ($('#data').hasClass('col-sm-7')) {
-      $('#data').addClass('col-sm-12').removeClass('col-sm-7');
+    if ($(this).hasClass('col-sm-7')) {
+      $(this).addClass('col-sm-12').removeClass('col-sm-7');
     }
-    if ($('#data').hasClass('smooth-transition')) {
-      $('#data').removeClass('smooth-transition');
+    if ($(this).hasClass('smooth-transition')) {
+      $(this).removeClass('smooth-transition');
     }
-    $("#data").load('main.php', function() {
-      $('#data').fadeIn(500);
+    $(this).load('main.php', function() {
+      $(this).fadeIn(500);
     });
   });
 }
@@ -165,8 +177,8 @@ function btnStartQuiz() {
   console.log("history pushed");
 
   $('#data').fadeOut(500, function() {
-    $("#data").load('quiz_list.php', function() {
-      $('#data').fadeIn(500);
+    $(this).load('quiz_list.php', function() {
+      $(this).fadeIn(500);
       $('.button-back').fadeIn(500);
     });
   });
