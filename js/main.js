@@ -95,6 +95,40 @@ $(document).ready(function() {
       newQuestion(language_sub);
     });
   });
+
+  $('#data').on('click', '.btnMultipleChoice', function(event) {
+    var btnValue = $(event.target).text();
+
+    quizArrHistory.push({
+      "question": random_question.question,
+      "answer": random_question.answer,
+      "your_answer": btnValue
+    });
+
+    if (btnValue.toUpperCase() == $('#hidden-question-quiz-answer').val().toUpperCase()) {
+      answerCorrect++;
+      $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
+    } else {
+      $('.bg-primary').addClass('bg-danger').removeClass('bg-primary');
+    }
+
+    var language = $('span#language').text();
+
+    if (count < ArrSize) {
+      //console.log("arrIndex: " + ArrIndex);
+      quizArr[1].splice(ArrIndex, 1);
+      newQuestion(language);
+    } else {
+      // Finished Quiz
+      $('#data').fadeOut(500, function() {
+        $("#data").load('quiz_finish.php', function() {
+          $('#data').fadeIn(500).delay(500).addClass('smooth-transition');
+          animate_percent();
+        });
+      });
+    }
+
+  });
 });
 
 window.onpopstate = function (event) {
