@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.textfill.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <!-- FONT AWESOME -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>

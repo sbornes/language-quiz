@@ -14,7 +14,7 @@ $(document).ready(function() {
   };
 
   history.replaceState(data, null, window.location.href);
-  console.log("history pushed");
+  // console.log("history pushed");
 
   mainPage();
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
       $(this).load('quiz_specific_list.php', data, function() {
         $(this).fadeIn(500);
         history.pushState(data, null, window.location.href);
-        console.log("history pushed");
+        // console.log("history pushed");
       });
     });
   });
@@ -72,7 +72,7 @@ $(document).ready(function() {
       $(this).load('main_language.php', data, function() {
         $(this).fadeIn(500);
         history.pushState(data, null, window.location.href);
-        console.log("history pushed");
+        // console.log("history pushed");
       });
     });
   });
@@ -88,7 +88,7 @@ $(document).ready(function() {
     };
 
     history.pushState(data, null, window.location.href);
-    console.log("history pushed");
+    // console.log("history pushed");
 
     reset();
     $.when(getLanguageJson(language, language_sub)).then(function() {
@@ -97,8 +97,9 @@ $(document).ready(function() {
   });
 
   $('#data').on('click', '.btnMultipleChoice', function(event) {
+    $('.btnMultipleChoice').attr("disabled", true);
     var btnValue = $(event.target).text();
-
+    // console.log("btnValue: " + btnValue);
     quizArrHistory.push({
       "question": random_question.question,
       "answer": random_question.answer,
@@ -129,10 +130,11 @@ $(document).ready(function() {
     }
 
   });
+  return false;
 });
 
 window.onpopstate = function (event) {
-  console.log(event.state);
+  // console.log(event.state);
   if(event.state) {
     if(event.state.url == "main.php") {
       $('.button-back').fadeOut(500);
@@ -211,7 +213,7 @@ function getLanguageJson(language, language_sub) {
 
     quizArr.push(quizArrTemp);
 
-    console.log(quizArr);
+    // console.log(quizArr);
 
     ArrSize = quizArr[1].length;
   });
@@ -223,7 +225,7 @@ function btnStartQuiz() {
   };
 
   history.pushState(data, null, window.location.href);
-  console.log("history pushed");
+  // console.log("history pushed");
 
   $('#data').fadeOut(500, function() {
     $(this).load('quiz_list.php', function() {
@@ -278,6 +280,11 @@ function newQuestion(language) {
     }, function() {
       $('#data').fadeIn(500);
       $('#question-quiz-answer').focus();
+      $('.card-body').textfill({
+          innerTag: "h5",
+          changeLineHeight: true,
+          maxFontPixels: 62
+      });
     });
   });
 }
@@ -291,6 +298,7 @@ function random_item(items) {
 $(document).on('keyup', '#question-quiz-answer', function(event) {
   if (event.keyCode == 13) {
     if ($(this).val().length > 0) {
+      $('#question-quiz-answer').attr("disabled", true);
       var CleanString = $(this).val().replace(/\s/g, '');
       quizArrHistory.push({
         "question": random_question.question,
@@ -334,7 +342,7 @@ function animate_percent() {
   curr = parseInt($percent.text()),
     to = Math.round(answerCorrect / ArrSize * 100);
 
-  console.log(answerCorrect + "/" + ArrSize + "=" + to);
+  // console.log(answerCorrect + "/" + ArrSize + "=" + to);
 
   counter = window.setInterval(function() {
     if (curr <= to) {
