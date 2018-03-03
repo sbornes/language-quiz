@@ -1,4 +1,7 @@
 <?php
+  $qCount = !empty($_REQUEST['qCount']) ? $_REQUEST['qCount'] : 0;
+  $qTotal = !empty($_REQUEST['qTotal']) ? $_REQUEST['qTotal'] : 0;
+
   $type = !empty($_REQUEST['type']) ? $_REQUEST['type'] : null;
 
   $question = !empty($_REQUEST['question']) ? $_REQUEST['question'] : null;
@@ -7,8 +10,22 @@
 
   $language = !empty($_REQUEST['language']) ? $_REQUEST['language'] : "";
 
-  $qCount = !empty($_REQUEST['qCount']) ? $_REQUEST['qCount'] : 0;
-  $qTotal = !empty($_REQUEST['qTotal']) ? $_REQUEST['qTotal'] : 0;
+  function shuffle_assoc(&$array) {
+      $keys = array_keys($array);
+
+      shuffle($keys);
+
+      foreach($keys as $key) {
+          $new[$key] = $array[$key];
+      }
+
+      $array = $new;
+
+      return true;
+  }
+
+  shuffle_assoc($choices);
+
 ?>
 
 <?php if($type == "quiz"): ?>
@@ -30,9 +47,9 @@
   <div class="card-body">
     <h5 class="card-text question-text text-center"><?php echo $question; ?></h5>
   </div>
-  <div class="card-footer">
+  <div class="card-footer text-center">
     <?php foreach ($choices as $key => $value): ?>
-      <button type="button" id="btnMultipleChoice" class="btn btn-outline-light col-xs-12 col-md-5 btn-lg my-1"><span class="text-capitalize"><?php echo $value; ?></span></button>
+      <button type="button" id="btnMultipleChoice" class="btn btn-outline-light btnMultipleChoice col-xs-12 col-md-5 btn-lg my-1 "><span class="text-capitalize"><?php echo $value; ?></span></button>
     <?php endforeach; ?>
     <input type="hidden" id="hidden-question-quiz-answer" value=<?php echo $answer; ?>>
   </div>
