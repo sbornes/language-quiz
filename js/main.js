@@ -153,18 +153,33 @@ function reset() {
 }
 
 function getLanguageJson(language, language_sub) {
-  return $.getJSON("json/" + language + "/" + language_sub + ".json", function(data) {
-    $.each(data, function(key, val) {
-      //quizArr[key] = val;
-      quizArr.push({
-        "question": key,
-        "answer": val
+  return $.getJSON("json/" + language + "/" + language_sub + ".json", function(json) {
+    quizArr.push({ "type": json.type });
+
+    var quizArrTemp = [];
+
+    if(json.type == "quiz") {
+      $.each(json.data, function(i, object) {
+          quizArrTemp.push({
+            "question": object.question,
+            "answer": object.answer
+        });
       });
-    });
-    // $.each(quizArr, function(index, val) {
-    //     console.log(index + ". " + val.question + " = " + val.answer);
-    // });
-    ArrSize = quizArr.length;
+    } else if (json.type == "multiple-choice") {
+      $.each(json.data, function(i, object) {
+          quizArrTemp.push({
+            "question": object.question,
+            "choices": object.choices,
+            "answer": object.choices[object.answer]
+        });
+      });
+    }
+
+    quizArr.push(quizArrTemp);
+
+    console.log(quizArr);
+
+    ArrSize = quizArr[1].length;
   });
 }
 
@@ -214,13 +229,15 @@ function btnReviewQuiz() {
 }
 
 function newQuestion(language) {
-  random_question = random_item(quizArr);
+  random_question = random_item(quizArr[1]);
   count++;
 
   $('#data').fadeOut(500, function() {
     $("#data").load('quiz_card.php', {
       'language': language,
+      'type': quizArr[0].type,
       'question': random_question.question,
+      'choices': random_question.choices,
       'answer': random_question.answer,
       'qCount': count,
       'qTotal': ArrSize
@@ -261,7 +278,7 @@ $(document).on('keyup', '#question-quiz-answer', function(event) {
 
       if (count < ArrSize) {
         //console.log("arrIndex: " + ArrIndex);
-        quizArr.splice(ArrIndex, 1);
+        quizArr[1].splice(ArrIndex, 1);
         newQuestion(language);
       } else {
         // Finished Quiz
