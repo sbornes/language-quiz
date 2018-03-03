@@ -1,5 +1,17 @@
 {
-  "&#22909;": "hao",
-  "&#20320;": "ni",
-  "&#21527;": "ma"
+  "type": "quiz",
+  "data": [
+    {
+      "question": "&#22909;",
+      "answer": "hao"
+    },
+    {
+      "question": "&#20320;",
+      "answer": "ni"
+    },
+    {
+      "question": "&#21527;",
+      "answer": "ma"
+    }
+  ]
 }

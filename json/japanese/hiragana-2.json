@@ -1,27 +1,105 @@
 {
-  "が": "ga",
-  "ぎ": "gi",
-  "ぐ": "gu",
-  "げ": "ge",
-  "ご": "go",
-  "ざ": "za",
-  "じ": "ji",
-  "ず": "zu",
-  "ぜ": "ze",
-  "ぞ": "zo",
-  "だ": "da",
-  "ぢ": "ji",
-  "づ": "zu",
-  "で": "de",
-  "ど": "do",
-  "ば": "ba",
-  "び": "bi",
-  "ぶ": "bu",
-  "べ": "be",
-  "ぼ": "bo",
-  "ぱ": "pa",
-  "ぴ": "pi",
-  "ぷ": "pu",
-  "ぺ": "pe",
-  "ぽ": "po"
+  "type": "quiz",
+  "data": [
+    {
+      "question": "が",
+      "answer": "ga"
+    },
+    {
+      "question": "ぎ",
+      "answer": "gi"
+    },
+    {
+      "question": "ぐ",
+      "answer": "gu"
+    },
+    {
+      "question": "げ",
+      "answer": "ge"
+    },
+    {
+      "question": "ご",
+      "answer": "go"
+    },
+    {
+      "question": "ざ",
+      "answer": "za"
+    },
+    {
+      "question": "じ",
+      "answer": "ji"
+    },
+    {
+      "question": "ず",
+      "answer": "zu"
+    },
+    {
+      "question": "ぜ",
+      "answer": "ze"
+    },
+    {
+      "question": "ぞ",
+      "answer": "zo"
+    },
+    {
+      "question": "だ",
+      "answer": "da"
+    },
+    {
+      "question": "ぢ",
+      "answer": "ji"
+    },
+    {
+      "question": "づ",
+      "answer": "zu"
+    },
+    {
+      "question": "で",
+      "answer": "de"
+    },
+    {
+      "question": "ど",
+      "answer": "do"
+    },
+    {
+      "question": "ば",
+      "answer": "ba"
+    },
+    {
+      "question": "び",
+      "answer": "bi"
+    },
+    {
+      "question": "ぶ",
+      "answer": "bu"
+    },
+    {
+      "question": "べ",
+      "answer": "be"
+    },
+    {
+      "question": "ぼ",
+      "answer": "bo"
+    },
+    {
+      "question": "ぱ",
+      "answer": "pa"
+    },
+    {
+      "question": "ぴ",
+      "answer": "pi"
+    },
+    {
+      "question": "ぷ",
+      "answer": "pu"
+    },
+    {
+      "question": "ぺ",
+      "answer": "pe"
+    },
+    {
+      "question": "ぽ",
+      "answer": "po"
+    }
+  ]
 }

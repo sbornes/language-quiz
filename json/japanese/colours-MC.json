@@ -1,0 +1,115 @@
+{
+  "type": "multiple-choice",
+  "data": [
+    {
+      "question": "あか",
+      "choices": {
+        "1": "blue",
+        "2": "purple",
+        "3": "red",
+        "4": "black"
+      },
+      "answer": "3"
+    },
+    {
+      "question": "きいろ",
+      "choices": {
+        "1": "purple",
+        "2": "white",
+        "3": "black",
+        "4": "yellow"
+      },
+      "answer": "4"
+    },
+    {
+      "question": "しろ",
+      "choices": {
+        "1": "white",
+        "2": "red",
+        "3": "blue",
+        "4": "black"
+      },
+      "answer": "1"
+    },
+    {
+      "question": "くろ",
+      "choices": {
+        "1": "pink",
+        "2": "grey",
+        "3": "grey",
+        "4": "black"
+      },
+      "answer": "4"
+    },
+    {
+      "question": "むらさき",
+      "choices": {
+        "1": "grey",
+        "2": "purple",
+        "3": "pink",
+        "4": "blue"
+      },
+      "answer": "2"
+    },
+    {
+      "question": "あお",
+      "choices": {
+        "1": "grey",
+        "2": "blue",
+        "3": "pink",
+        "4": "purple"
+      },
+      "answer": "2"
+    },
+    {
+      "question": "みどり",
+      "choices": {
+        "1": "grey",
+        "2": "green",
+        "3": "brown",
+        "4": "orange"
+      },
+      "answer": "2"
+    },
+    {
+      "question": "はいいろ",
+      "choices": {
+        "1": "brown",
+        "2": "black",
+        "3": "red",
+        "4": "grey"
+      },
+      "answer": "4"
+    },
+    {
+      "question": "ちゃいろ",
+      "choices": {
+        "1": "brown",
+        "2": "red",
+        "3": "white",
+        "4": "orange"
+      },
+      "answer": "1"
+    },
+    {
+      "question": "おれんじ",
+      "choices": {
+        "1": "brown",
+        "2": "grey",
+        "3": "orange",
+        "4": "blue"
+      },
+      "answer": "3"
+    },
+    {
+      "question": "ぴんく",
+      "choices": {
+        "1": "blue",
+        "2": "white",
+        "3": "pink",
+        "4": "brown"
+      },
+      "answer": "3"
+    }
+  ]
+}
