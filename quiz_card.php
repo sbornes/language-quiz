@@ -24,7 +24,7 @@
       return true;
   }
 
-  shuffle_assoc($choices);
+  if($type == "multiple-choice") { shuffle_assoc($choices); }
 
 ?>
 
