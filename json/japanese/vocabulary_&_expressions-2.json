@@ -1,0 +1,285 @@
+{
+  "type": "multiple-choice",
+  "data": [
+    {
+      "question": "あのう",
+      "choices": {
+        "1": "Aah…/Err…",
+        "2": "Thank you.",
+        "3": "How do you do?",
+        "4": "Pleased to meet you."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "ありがとうございます",
+      "choices": {
+        "1": "Thank you.",
+        "2": "Pleased to meet you.",
+        "3": "Good evening.",
+        "4": "Goodbye."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "えんぴつ",
+      "choices": {
+        "1": "pencil",
+        "2": "bag",
+        "3": "textbook",
+        "4": "train"
+      },
+      "answer": "1"
+    },
+    {
+      "question": "おかあさん",
+      "choices": {
+        "1": "someone else’s mother.",
+        "2": "someone else’s grandfather.",
+        "3": "someone else’s father.",
+        "4": "someone else’s grandmother."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "おじいさん",
+      "choices": {
+        "1": "someone else’s grandfather.",
+        "2": "someone else’s mother.",
+        "3": "someone else’s father.",
+        "4": "someone else’s grandmother."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "おじさん",
+      "choices": {
+        "1": "uncle; middle-aged man",
+        "2": "aunt; middle-aged woman",
+        "3": "Mr./Mrs./Ms./Miss",
+        "4": "Teacher/term of address"
+      },
+      "answer": "1"
+    },
+    {
+      "question": "おとうさん",
+      "choices": {
+        "1": "someone else’s grandfather.",
+        "2": "someone else’s mother.",
+        "3": "someone else’s father.",
+        "4": "someone else’s grandmother."
+      },
+      "answer": "3"
+    },
+    {
+      "question": "おばあさん",
+      "choices": {
+        "1": "someone else’s grandfather.",
+        "2": "someone else’s mother.",
+        "3": "someone else’s father.",
+        "4": "someone else’s grandmother."
+      },
+      "answer": "4"
+    },
+    {
+      "question": "おばさん",
+      "choices": {
+        "1": "uncle; middle-aged man",
+        "2": "aunt; middle-aged woman",
+        "3": "Mr./Mrs./Ms./Miss",
+        "4": "Teacher/term of address"
+      },
+      "answer": "2"
+    },
+    {
+      "question": "おはようございます",
+      "choices": {
+        "1": "Good morning.",
+        "2": "Good evening.",
+        "3": "Goodbye. (polite)",
+        "4": "Hello; Good afternoon."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "かばん",
+      "choices": {
+        "1": "pencil",
+        "2": "bag",
+        "3": "textbook",
+        "4": "train"
+      },
+      "answer": "2"
+    },
+    {
+      "question": "きょうかしょ",
+      "choices": {
+        "1": "pencil",
+        "2": "bag",
+        "3": "textbook",
+        "4": "train"
+      },
+      "answer": "3"
+    },
+    {
+      "question": "こんにちは",
+      "choices": {
+        "1": "Good morning.",
+        "2": "Good evening.",
+        "3": "Goodbye. (polite)",
+        "4": "Hello; Good afternoon."
+      },
+      "answer": "4"
+    },
+    {
+      "question": "こんにちは",
+      "choices": {
+        "1": "Good morning.",
+        "2": "Good evening.",
+        "3": "Goodbye. (polite)",
+        "4": "Hello; Good afternoon."
+      },
+      "answer": "2"
+    },
+    {
+      "question": "さようなら",
+      "choices": {
+        "1": "Good morning.",
+        "2": "Good evening.",
+        "3": "Goodbye. (polite)",
+        "4": "Goodbye."
+      },
+      "answer": "4"
+    },
+    {
+      "question": "〜さん",
+      "choices": {
+        "1": "Aah…/Err…",
+        "2": "Teacher/term of address",
+        "3": "Excuse me./Sorry",
+        "4": "Mr./Mrs./Ms./Miss"
+      },
+      "answer": "4"
+    },
+    {
+      "question": "しつれいします",
+      "choices": {
+        "1": "Good morning.",
+        "2": "Good evening.",
+        "3": "Goodbye. (polite)",
+        "4": "Goodbye."
+      },
+      "answer": "3"
+    },
+    {
+      "question": "すみません",
+      "choices": {
+        "1": "How do you do?",
+        "2": "Pleased to meet you. (more casual).",
+        "3": "Excuse me./Sorry.",
+        "4": "Pleased to meet you."
+      },
+      "answer": "3"
+    },
+    {
+      "question": "にほん",
+      "choices": {
+        "1": "Japan",
+        "2": "cat.",
+        "3": "flower; nose",
+        "4": "scissors."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "ねこ",
+      "choices": {
+        "1": "dog.",
+        "2": "cat.",
+        "3": "rat.",
+        "4": "turtle."
+      },
+      "answer": "2"
+    },
+    {
+      "question": "はさみ",
+      "choices": {
+        "1": "scissors.",
+        "2": "pencil.",
+        "3": "bag.",
+        "4": "textbook."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "はじめまして",
+      "choices": {
+        "1": "How do you do?",
+        "2": "Pleased to meet you.",
+        "3": "Excuse me./Sorry.",
+        "4": "Thank you."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "はな",
+      "choices": {
+        "1": "flower; nose.",
+        "2": "face.",
+        "3": "lip.",
+        "4": "eye."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "ほん",
+      "choices": {
+        "1": "book.",
+        "2": "pencil.",
+        "3": "bag.",
+        "4": "textbook."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "よろしくおねがいします",
+      "choices": {
+        "1": "How do you do?",
+        "2": "Pleased to meet you.",
+        "3": "Excuse me./Sorry.",
+        "4": "Thank you."
+      },
+      "answer": "2"
+    },
+    {
+      "question": "でんしゃ",
+      "choices": {
+        "1": "Train.",
+        "2": "Car.",
+        "3": "Subway.",
+        "4": "Bus."
+      },
+      "answer": "1"
+    },
+    {
+      "question": "どういたしまして",
+      "choices": {
+        "1": "You are welcome.",
+        "2": "Pleased to meet you. (more casual)",
+        "3": "Pleased to meet you.",
+        "4": "How do you do?"
+      },
+      "answer": "1"
+    },
+    {
+      "question": "どうぞよろしく",
+      "choices": {
+        "1": "You are welcome.",
+        "2": "Pleased to meet you. (more casual)",
+        "3": "Pleased to meet you.",
+        "4": "How do you do?"
+      },
+      "answer": "2"
+    }
+  ]
+}
