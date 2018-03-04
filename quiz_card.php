@@ -42,7 +42,7 @@
 <?php endif; ?>
 
 <?php if($type == "multiple-choice"): ?>
-<div class="card text-white bg-primary mx-auto w-75" style="max-width: 40rem;">
+<div class="card text-white bg-primary mx-auto" style="max-width: 40rem;">
   <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> Quiz </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
   <div class="card-body">
     <h5 class="card-text question-text text-center"><?php echo $question; ?></h5>
@@ -51,7 +51,7 @@
     <?php foreach ($choices as $key => $value): ?>
       <button type="button" id="btnMultipleChoice" class="btn btn-outline-light btnMultipleChoice col-xs-12 col-md-5 btn-lg my-1 "><span class="text-capitalize"><?php echo $value; ?></span></button>
     <?php endforeach; ?>
-    <input type="hidden" id="hidden-question-quiz-answer" value=<?php echo $answer; ?>>
+    <input type="hidden" id="hidden-question-quiz-answer" value="<?php echo $answer; ?>">
   </div>
 </div>
 <?php endif; ?>
