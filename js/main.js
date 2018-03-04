@@ -145,8 +145,8 @@ window.onpopstate = function (event) {
     });
 
     $('#data').fadeOut(500, function() {
-      if ($(this).hasClass('col-sm-7')) {
-        $(this).addClass('col-sm-12').removeClass('col-sm-7');
+      if ($(this).hasClass('col-sm-6')) {
+        $(this).addClass('col-sm-12').removeClass('col-sm-6');
       }
       if ($(this).hasClass('smooth-transition')) {
         $(this).removeClass('smooth-transition');
@@ -165,8 +165,8 @@ function mainPage() {
   });
 
   $('#data').fadeOut(500, function() {
-    if ($(this).hasClass('col-sm-7')) {
-      $(this).addClass('col-sm-12').removeClass('col-sm-7');
+    if ($(this).hasClass('col-sm-6')) {
+      $(this).addClass('col-sm-12').removeClass('col-sm-6');
     }
     if ($(this).hasClass('smooth-transition')) {
       $(this).removeClass('smooth-transition');
@@ -241,7 +241,7 @@ function btnReviewQuiz() {
   if (review) {
     $('#btnReviewQuiz').text('Close Review');
     $('.w-25').addClass('w-50').removeClass('w-25');
-    $('#data').toggleClass('col-sm-12 col-sm-7');
+    $('#data').toggleClass('col-sm-12 col-sm-6');
     // Wait for toggleClass animation to end before showing table, Ensures smooth column transition
     $('#data').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
       function(event) {
@@ -258,7 +258,7 @@ function btnReviewQuiz() {
     $('#data2').fadeOut(500, function() {
       $("#data2").remove();
       $('#btnReviewQuiz').text('Review Quiz!');
-      $('#data').toggleClass('col-sm-7 col-sm-12');
+      $('#data').toggleClass('col-sm-6 col-sm-12');
       $('.w-50').addClass('w-25').removeClass('w-50');
     });
   }
@@ -280,11 +280,23 @@ function newQuestion(language) {
     }, function() {
       $('#data').fadeIn(500);
       $('#question-quiz-answer').focus();
-      $('.card-body').textfill({
-          innerTag: "h5",
-          changeLineHeight: true,
-          maxFontPixels: 62
-      });
+
+      console.log("quizArr[0].type = " + quizArr[0].type);
+
+      if(quizArr[0].type == "quiz") {
+        $('.card-body').textfill({
+            innerTag: "h5",
+            changeLineHeight: true,
+            maxFontPixels: 62
+        });
+      }
+      if(quizArr[0].type == "multiple-choice") {
+        // console.log("resized");
+        $('button').textfill({
+            innerTag: "span",
+            maxFontPixels: 62
+        });
+      }
     });
   });
 }
