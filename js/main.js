@@ -23,7 +23,7 @@ $(document).ready(function() {
     function bgscroll() {
       $('.bg-worldmap').stop().animate({
         'background-position': '-=1000'
-      }, 10000, 'linear', bgscroll);
+      }, 40000, 'linear', bgscroll);
     }
     bgscroll(); // initiate!!
   });
