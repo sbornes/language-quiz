@@ -56,9 +56,35 @@
       </button>
     </h5>
   </div>
-  <div class="card-footer">
+  <div class="card-footer text-center">
+    <canvas class="bg-light" id="can" style="border: 2px #252830 solid; cursor: crosshair; width: 100%;"></canvas>
+
+    <div class="btn-group mb-2">
+      <button class="btn btn-dark" onclick="can1.erase();">Erase</button>
+      <button class="btn btn-dark" onclick="can1.recognize();">Recognize</button>
+    </div>
+
     <input class="form-control" type="text" value="" id="question-quiz-answer">
     <input type="hidden" id="hidden-question-quiz-answer" value=<?php echo $question; ?>>
   </div>
 </div>
+
+<script>
+    var can1 = new handwriting.Canvas(document.getElementById("can"));
+
+    can1.setCallBack(function(data, err) {
+        if(err) throw err;
+        else console.log(data);
+
+        $('#question-quiz-answer').val($('#question-quiz-answer').val() + data[0]);
+        can1.erase();
+    });
+    //Set options
+    can1.setOptions(
+      {
+          language: "zh_CN",
+          numOfReturn: 1
+      }
+    );
+</script>
 <?php endif; ?>

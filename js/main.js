@@ -137,11 +137,13 @@ $(document).ready(function() {
 
 $('#data').on('click', '.speaker', function(event) {
   if(!responsiveVoice.isPlaying()) {
+    voiceStartCallback();
     var btnValue = $(this).attr('data-tts');
     console.log("Speaker Clicked, val = " + btnValue);
     responsiveVoice.speak(btnValue, "Chinese Female", {onstart: voiceStartCallback, onend: voiceEndCallback});
   }
   else {
+    voiceEndCallback();
     responsiveVoice.cancel();
   }
   return false;
