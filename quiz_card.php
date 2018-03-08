@@ -20,7 +20,7 @@
 
 <?php if($type == "quiz"): ?>
 <div class="card text-white bg-primary mx-auto" style="max-width: 18rem;">
-  <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> Quiz </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
+  <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
   <div class="card-body" style="width: 18rem;">
     <h5 class="card-text question-text text-center"><?php echo $question; ?></h5>
   </div>
@@ -33,7 +33,7 @@
 
 <?php if($type == "multiple-choice"): ?>
 <div class="card text-white bg-primary mx-auto" style="max-width: 40rem;">
-  <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> Quiz </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
+  <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
   <div class="card-body">
     <h5 class="card-text question-text text-center"><?php echo $question; ?></h5>
   </div>
@@ -48,7 +48,7 @@
 
 <?php if($type == "dictation"): ?>
 <div class="card text-white bg-primary mx-auto" style="max-width: 18rem;">
-  <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> Quiz </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
+  <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
   <div class="card-body" style="width: 18rem;">
     <h5 class="card-text question-text text-center">
       <button type="button" data-tts="<?php echo $question; ?>" class="speaker">
