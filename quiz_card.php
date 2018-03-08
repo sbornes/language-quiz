@@ -1,4 +1,6 @@
 <?php
+  include_once 'phpscripts/stocks.php';
+
   $qCount = !empty($_REQUEST['qCount']) ? $_REQUEST['qCount'] : 0;
   $qTotal = !empty($_REQUEST['qTotal']) ? $_REQUEST['qTotal'] : 0;
 
@@ -9,20 +11,8 @@
   $answer = !empty($_REQUEST['answer']) ? $_REQUEST['answer'] : null;
 
   $language = !empty($_REQUEST['language']) ? $_REQUEST['language'] : "";
+  $language_code = !empty($_REQUEST['language_code']) ? $_REQUEST['language_code'] : "";
 
-  function shuffle_assoc(&$array) {
-      $keys = array_keys($array);
-
-      shuffle($keys);
-
-      foreach($keys as $key) {
-          $new[$key] = $array[$key];
-      }
-
-      $array = $new;
-
-      return true;
-  }
 
   if($type == "multiple-choice") { shuffle_assoc($choices); }
 
@@ -52,6 +42,23 @@
       <button type="button" id="btnMultipleChoice" class="btn btn-outline-light btnMultipleChoice col-xs-12 col-md-5 btn-lg my-1 "><span class="text-capitalize"><?php echo $value; ?></span></button>
     <?php endforeach; ?>
     <input type="hidden" id="hidden-question-quiz-answer" value="<?php echo $answer; ?>">
+  </div>
+</div>
+<?php endif; ?>
+
+<?php if($type == "dictation"): ?>
+<div class="card text-white bg-primary mx-auto" style="max-width: 18rem;">
+  <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> Quiz </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
+  <div class="card-body" style="width: 18rem;">
+    <h5 class="card-text question-text text-center">
+      <button type="button" data-tts="<?php echo $question; ?>" class="speaker">
+        <i class="far fa-play-circle"></i>
+      </button>
+    </h5>
+  </div>
+  <div class="card-footer">
+    <input class="form-control" type="text" value="" id="question-quiz-answer">
+    <input type="hidden" id="hidden-question-quiz-answer" value=<?php echo $question; ?>>
   </div>
 </div>
 <?php endif; ?>

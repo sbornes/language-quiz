@@ -135,6 +135,26 @@ $(document).ready(function() {
   return false;
 });
 
+$('#data').on('click', '.speaker', function(event) {
+  if(!responsiveVoice.isPlaying()) {
+    var btnValue = $(this).attr('data-tts');
+    console.log("Speaker Clicked, val = " + btnValue);
+    responsiveVoice.speak(btnValue, "Chinese Female", {onstart: voiceStartCallback, onend: voiceEndCallback});
+  }
+  else {
+    responsiveVoice.cancel();
+  }
+  return false;
+});
+
+function voiceStartCallback() {
+  $(".speaker").html("<i class=\"far fa-pause-circle\"></i>");
+}
+
+function voiceEndCallback() {
+  $(".speaker").html("<i class=\"far fa-play-circle\"></i>");
+}
+
 window.onpopstate = function (event) {
   // console.log(event.state);
   if(event.state) {
@@ -192,7 +212,9 @@ function reset() {
 
 function getLanguageJson(language, language_sub, language_quiz) {
   return $.getJSON("json/" + language + "/" + language_sub + "/" + language_quiz + ".json", function(json) {
-    quizArr.push({ "type": json.type });
+    quizArr.push([{ "type": json.type, "language_code": json.language_code }]);
+
+    console.log(quizArr);
 
     var quizArrTemp = [];
 
@@ -209,6 +231,13 @@ function getLanguageJson(language, language_sub, language_quiz) {
             "question": object.question,
             "choices": object.choices,
             "answer": object.choices[object.answer]
+        });
+      });
+    } else if (json.type == "dictation") {
+      $.each(json.data, function(i, object) {
+          quizArrTemp.push({
+            "question": object.question,
+            "answer": object.question
         });
       });
     }
@@ -273,7 +302,8 @@ function newQuestion(language) {
   $('#data').fadeOut(500, function() {
     $("#data").load('quiz_card.php', {
       'language': language,
-      'type': quizArr[0].type,
+      'language_code': quizArr[0][0].language_code,
+      'type': quizArr[0][0].type,
       'question': random_question.question,
       'choices': random_question.choices,
       'answer': random_question.answer,
@@ -283,16 +313,16 @@ function newQuestion(language) {
       $('#data').fadeIn(500);
       $('#question-quiz-answer').focus();
 
-      console.log("quizArr[0].type = " + quizArr[0].type);
+      console.log("quizArr[0].type = " + quizArr[0][0].type);
 
-      if(quizArr[0].type == "quiz") {
+      if(quizArr[0][0].type == "quiz") {
         $('.card-body').textfill({
             innerTag: "h5",
             changeLineHeight: true,
             maxFontPixels: 62
         });
       }
-      if(quizArr[0].type == "multiple-choice") {
+      if(quizArr[0][0].type == "multiple-choice") {
         // console.log("resized");
         $('button').textfill({
             innerTag: "span",

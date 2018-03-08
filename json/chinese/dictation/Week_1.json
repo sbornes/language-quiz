@@ -1,0 +1,9 @@
+{
+  "type": "dictation",
+  "language_code": "zh-CN",
+  "data": [
+    { "question": "好" },
+    { "question": "你" },
+    { "question": "吗" }
+  ]
+}
