@@ -77,22 +77,24 @@ $(document).ready(function() {
     });
   });
 
-  $('#data').on('click', '#btnStartLanguageQuiz', function() {
-    var language = $(this).attr('data-language');
-    var language_sub = $(this).attr('data-language-sub');
+  $('#data').on('click', '.btnStartLanguageQuiz', function() {
+    var language = $(event.target).attr('data-language');
+    var language_sub = $(event.target).attr('data-language-sub');
+    var language_quiz = $(event.target).attr('data-language-sub-quiz');
 
     var data = {
       'url': 'main.language.php',
       'language': language,
-      'language_sub': language_sub
+      'language_sub': language_sub,
+      'language_sub_quiz': language_quiz
     };
 
     history.pushState(data, null, window.location.href);
     // console.log("history pushed");
 
     reset();
-    $.when(getLanguageJson(language, language_sub)).then(function() {
-      newQuestion(language_sub);
+    $.when(getLanguageJson(language, language_sub, language_quiz)).then(function() {
+      newQuestion(language_quiz);
     });
   });
 
@@ -188,8 +190,8 @@ function reset() {
   review = false;
 }
 
-function getLanguageJson(language, language_sub) {
-  return $.getJSON("json/" + language + "/" + language_sub + ".json", function(json) {
+function getLanguageJson(language, language_sub, language_quiz) {
+  return $.getJSON("json/" + language + "/" + language_sub + "/" + language_quiz + ".json", function(json) {
     quizArr.push({ "type": json.type });
 
     var quizArrTemp = [];

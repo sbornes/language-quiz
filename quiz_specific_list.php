@@ -1,6 +1,6 @@
 <?php
   $language = !empty($_REQUEST['language']) ? $_REQUEST['language'] : null;
-  $json_files = glob('json/' . $language . '/*.json');
+  $json_files = glob('json/' . $language . '/*', GLOB_ONLYDIR);
   $quizArr = array();
 
   foreach ($json_files as $key => $value) {
