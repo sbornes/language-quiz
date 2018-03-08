@@ -15,7 +15,7 @@
 
 ?>
 
-<div class="mx-auto text-center">
+<div class="mx-auto text-center col-sm-9 col-md-6">
   <div class="quiz_slider">
   <?php foreach ($quizArr as $key => $value) : ?>
     <div>
