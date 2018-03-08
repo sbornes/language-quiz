@@ -7,7 +7,7 @@
     <thead class="thead-dark">
       <tr>
         <th scope="col" class="sticky-top">#</th>
-        <th scope="col" class="sticky-top">Hiragana</th>
+        <th scope="col" class="sticky-top">Question</th>
         <th scope="col" class="sticky-top">Answer</th>
         <th scope="col" class="sticky-top">Your Answer</th>
       </tr>
