@@ -1,0 +1,42 @@
+{
+  "type": "writing",
+  "language_code": "ja",
+  "data": [
+    {
+      "question": "kyojin" ,
+      "answer": "きょじん"
+    },
+    {
+      "question": "shippai",
+      "answer": "しっぱい"
+    },
+    {
+      "question": "zasshi" ,
+      "answer": "ざっし"
+    },
+    {
+      "question": "jishaku",
+      "answer": "じしゃく"
+    },
+    {
+      "question": "manga",
+      "answer": "まんが"
+    },
+    {
+      "question": "kitte",
+      "answer": "きって"
+    },
+    {
+      "question": "sensei/sensee",
+      "answer": "せんせい"
+    },
+    {
+      "question": "Arigatō",
+      "answer": "ありがとう"
+    },
+    {
+      "question": "kyōkasho",
+      "answer": "きょうかしょ"
+    }
+  ]
+}

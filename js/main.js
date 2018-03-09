@@ -220,7 +220,7 @@ function getLanguageJson(language, language_sub, language_quiz) {
 
     var quizArrTemp = [];
 
-    if(json.type == "quiz") {
+    if(json.type == "quiz" || json.type == "writing") {
       $.each(json.data, function(i, object) {
           quizArrTemp.push({
             "question": object.question,
