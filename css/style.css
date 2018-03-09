@@ -58,7 +58,7 @@ h2 {
 
 .review-button {
   max-width: 33%;
-  min-width: 290px;
+  min-width: 260px;
   width: 352px;
 }
 
@@ -95,8 +95,8 @@ h2 {
   cursor: pointer;
 }
 
-.btn:focus {
-  outline: none;
+.btn * {
+  outline: none !important;
 }
 
 ::-webkit-scrollbar {

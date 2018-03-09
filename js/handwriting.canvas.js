@@ -1,11 +1,11 @@
 (function(window, document) {
 
-    // Establish the root object, `window` (`self`) in the browser, 
+    // Establish the root object, `window` (`self`) in the browser,
     // or `this` in some virtual machines. We use `self`
     // instead of `window` for `WebWorker` support.
     var root = typeof self === 'object' && self.self === self && self || this;
 
-    // Create a safe reference to the handwriting object for use below.        
+    // Create a safe reference to the handwriting object for use below.
     var handwriting = function(obj) {
         if (obj instanceof handwriting) return obj;
         if (!(this instanceof handwriting)) return new handwriting(obj);

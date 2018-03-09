@@ -57,7 +57,7 @@
     </h5>
   </div>
   <div class="card-footer text-center">
-    <canvas class="bg-light" id="can" style="border: 2px #252830 solid; cursor: crosshair; width: 100%;"></canvas>
+    <canvas class="bg-light" id="can" width="246px" height="125px" style="border: 2px #252830 solid; cursor: crosshair;"></canvas>
 
     <div class="btn-group mb-2">
       <button class="btn btn-dark" onclick="can1.erase();">Erase</button>
@@ -70,21 +70,24 @@
 </div>
 
 <script>
-    var can1 = new handwriting.Canvas(document.getElementById("can"));
 
-    can1.setCallBack(function(data, err) {
-        if(err) throw err;
-        else console.log(data);
 
-        $('#question-quiz-answer').val($('#question-quiz-answer').val() + data[0]);
-        can1.erase();
-    });
-    //Set options
-    can1.setOptions(
-      {
-          language: "zh_CN",
-          numOfReturn: 1
-      }
-    );
+  var can1 = new handwriting.Canvas(document.getElementById("can"));
+
+  can1.setCallBack(function(data, err) {
+      if(err) throw err;
+      else console.log(data);
+
+      $('#question-quiz-answer').val($('#question-quiz-answer').val() + data[0]);
+      can1.erase();
+  });
+  //Set options
+  can1.setOptions(
+    {
+        language: "<?php echo $language_code; ?>",
+        numOfReturn: 1
+    }
+  );
+
 </script>
 <?php endif; ?>

@@ -4,6 +4,24 @@
   "data": [
     { "question": "好" },
     { "question": "你" },
-    { "question": "吗" }
+    { "question": "吗" },
+    { "question": "我" },
+    { "question": "很" },
+    { "question": "呢" },
+    { "question": "也" },
+    { "question": "忙" },
+    { "question": "爸爸" },
+    { "question": "妈妈" },
+    { "question": "也们" },
+    { "question": "都" },
+    { "question": "男" },
+    { "question": "朋友" },
+    { "question": "哥哥" },
+    { "question": "要" },
+    { "question": "咖啡" },
+    { "question": "弟弟" },
+    { "question": "我们" },
+    { "question": "喝" },
+    { "question": "饿" }
   ]
 }
