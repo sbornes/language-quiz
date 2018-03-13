@@ -117,7 +117,6 @@
       else console.log(data);
 
       $('#question-quiz-answer').val($('#question-quiz-answer').val() + data[0]);
-      $('#question-quiz-answer').focus();
       can1.erase();
   });
   //Set options

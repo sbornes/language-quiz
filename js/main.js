@@ -341,17 +341,17 @@ function random_item(items) {
 }
 
 // TEXT BOX ANSWER
-$(document).on('keyup', '#question-quiz-answer', function(event) {
+$(document).on('keyup', function(event) {
   if (event.keyCode == 13) {
-    if ($(this).val().length > 0) {
+    if ($('#question-quiz-answer').val().length > 0) {
       $('#question-quiz-answer').attr("disabled", true);
-      var CleanString = $(this).val().replace(/\s/g, '');
+      var CleanString = $('#question-quiz-answer').val().replace(/\s/g, '');
       quizArrHistory.push({
         "question": random_question.question,
         "answer": random_question.answer,
         "your_answer": CleanString
       });
-      if (CleanString.toUpperCase() == $('#hidden-question-quiz-answer').val().toUpperCase()) {
+      if (CleanString.toUpperCase() == $('#question-quiz-answer').val().toUpperCase()) {
         answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
         $('.form-control').addClass('is-valid');
@@ -360,7 +360,7 @@ $(document).on('keyup', '#question-quiz-answer', function(event) {
         $('.form-control').addClass('is-invalid');
       }
 
-      $(this).val('');
+      $('#question-quiz-answer').val('');
 
       var language = $('span#language').text();
 
