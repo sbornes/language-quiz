@@ -1,0 +1,98 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Rènshì" ,
+      "answer": "认识"
+    },
+    {
+      "question": "Gāoxìng",
+      "answer": "高兴"
+    },
+    {
+      "question": "Kěyǐ" ,
+      "answer": "可以"
+    },
+    {
+      "question": "Jìnlái",
+      "answer": "进来"
+    },
+    {
+      "question": "Qǐng",
+      "answer": "请"
+    },
+    {
+      "question": "Péngyǒu",
+      "answer": "朋友"
+    },
+    {
+      "question": "Jìzhě",
+      "answer": "记者"
+    },
+    {
+      "question": "Qǐngwèn",
+      "answer": "请问"
+    },
+    {
+      "question": "Xìng",
+      "answer": "姓"
+    },
+    {
+      "question": "Guìxìng",
+      "answer": "贵姓"
+    },
+    {
+      "question": "Jiào",
+      "answer": "叫"
+    },
+    {
+      "question": "Xiānshēng",
+      "answer": "先生"
+    },
+    {
+      "question": "Yǔyán",
+      "answer": "语言"
+    },
+    {
+      "question": "Xuéyuàn",
+      "answer": "学院"
+    },
+    {
+      "question": "Xué",
+      "answer": "学"
+    },
+    {
+      "question": "De",
+      "answer": "的"
+    },
+    {
+      "question": "Xuéshēng",
+      "answer": "学生"
+    },
+    {
+      "question": "Shénme",
+      "answer": "什么"
+    },
+    {
+      "question": "Xuéxí",
+      "answer": "学习"
+    },
+    {
+      "question": "Hànyǔ",
+      "answer": "汉语"
+    },
+    {
+      "question": "Yīngguó",
+      "answer": "英国"
+    },
+    {
+      "question": "Jiānádà",
+      "answer": "加拿大"
+    },
+    {
+      "question": "Měiguó",
+      "answer": "美国"
+    }
+  ]
+}
