@@ -353,7 +353,7 @@ $(document).on('keyup', function(event) {
         "answer": random_question.answer,
         "your_answer": CleanString
       });
-      if (CleanString.toUpperCase() == $('#question-quiz-answer').val().toUpperCase()) {
+      if (CleanString.toUpperCase() == $('#hidden-question-quiz-answer').val().toUpperCase()) {
         answerCorrect++;
         $('.bg-primary').addClass('bg-success').removeClass('bg-primary');
         $('.form-control').addClass('is-valid');
