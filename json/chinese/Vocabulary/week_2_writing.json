@@ -1,0 +1,74 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Máng" ,
+      "answer": "忙"
+    },
+    {
+      "question": "Bàba",
+      "answer": "爸爸"
+    },
+    {
+      "question": "Ma" ,
+      "answer": "吗"
+    },
+    {
+      "question": "Māmā",
+      "answer": "妈妈"
+    },
+    {
+      "question": "Tāmen",
+      "answer": "他们"
+    },
+    {
+      "question": "Tā",
+      "answer": "他"
+    },
+    {
+      "question": "men",
+      "answer": "们"
+    },
+    {
+      "question": "Dōu",
+      "answer": "都"
+    },
+    {
+      "question": "Bù",
+      "answer": "不"
+    },
+    {
+      "question": "Nán",
+      "answer": "男"
+    },
+    {
+      "question": "Péngyǒu",
+      "answer": "朋友"
+    },
+    {
+      "question": "Ne",
+      "answer": "呢"
+    },
+    {
+      "question": "Gēgē",
+      "answer": "哥哥"
+    },
+    {
+      "question": "Yào",
+      "answer": "要"
+    },
+    {
+      "question": "Kāfēi",
+      "answer": "咖啡"
+    },
+    {
+      "question": "Dìdì",
+      "answer": "弟弟"
+    },
+    {
+      "question": "Hē",
+      "answer": "喝"
+    }
+  ]
+}

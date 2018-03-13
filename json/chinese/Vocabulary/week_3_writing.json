@@ -1,0 +1,34 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Wàipó" ,
+      "answer": "外婆"
+    },
+    {
+      "question": "Nín",
+      "answer": "您"
+    },
+    {
+      "question": "Zhè" ,
+      "answer": "这"
+    },
+    {
+      "question": "Tā",
+      "answer": "他"
+    },
+    {
+      "question": "Wàiyǔ",
+      "answer": "外语"
+    },
+    {
+      "question": "Yīshēng",
+      "answer": "医生"
+    },
+    {
+      "question": "Nǎinai",
+      "answer": "奶奶"
+    }
+  ]
+}

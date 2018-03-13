@@ -1,0 +1,34 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Nǐ" ,
+      "answer": "你"
+    },
+    {
+      "question": "Hǎo",
+      "answer": "好"
+    },
+    {
+      "question": "Ma" ,
+      "answer": "吗"
+    },
+    {
+      "question": "Wǒ",
+      "answer": "我"
+    },
+    {
+      "question": "Hěn",
+      "answer": "很"
+    },
+    {
+      "question": "Ne",
+      "answer": "呢"
+    },
+    {
+      "question": "Yě",
+      "answer": "也"
+    }
+  ]
+}
