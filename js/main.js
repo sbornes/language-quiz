@@ -313,7 +313,9 @@ function newQuestion(language) {
       'qTotal': ArrSize
     }, function() {
       $('#data').fadeIn(500);
-      $('#question-quiz-answer').focus();
+      if(quizArr[0][0].type != "writing") {
+        $('#question-quiz-answer').focus();
+      }
 
       console.log("quizArr[0].type = " + quizArr[0][0].type);
 
