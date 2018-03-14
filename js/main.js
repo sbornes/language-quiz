@@ -19,14 +19,14 @@ $(document).ready(function() {
   mainPage();
 
   // https://stackoverflow.com/a/12206385
-  $(function() {
-    function bgscroll() {
-      $('.bg-worldmap').stop().animate({
-        'background-position': '-=1000'
-      }, 40000, 'linear', bgscroll);
-    }
-    bgscroll(); // initiate!!
-  });
+  // $(function() {
+  //   function bgscroll() {
+  //     $('.bg-worldmap').stop().animate({
+  //       'background-position': '-=1000'
+  //     }, 40000, 'linear', bgscroll);
+  //   }
+  //   bgscroll(); // initiate!!
+  // });
 
   //var $loading = $('#ajax-spinner').hide();
   var $loading = $('#ajax-spinner');
