@@ -97,15 +97,38 @@
     <h5 class="card-text question-text text-center"><?php echo $question; ?></h5>
   </div>
   <div class="card-footer text-center">
-    <canvas class="bg-light" id="can" width="246px" height="125px" style="border: 2px #252830 solid; cursor: crosshair;"></canvas>
-
-    <div class="btn-group mb-2">
-      <button class="btn btn-dark" onclick="can1.erase();">Erase</button>
-      <button class="btn btn-dark" onclick="can1.recognize();">Recognize</button>
+    <div style="position: relative;">
+      <canvas class="bg-light" id="can" width="246px" height="125px" style="border: 2px #252830 solid; cursor: crosshair;"></canvas>
+      <div style="position: absolute; top: 0; right: 0;">
+        <a href="javascript:void(0);" onclick="can1.erase();" class="">
+          <i class="far fa-times-circle text-danger"></i>
+        </a>
+      </div>
+      <div style="position: absolute; bottom: 5px; right: 0;">
+        <a href="javascript:void(0);" onclick="can1.recognize();" class="">
+          <i class="far fa-check-circle text-success"></i>
+        </a>
+      </div>
     </div>
 
-    <input class="form-control" type="text" value="" id="question-quiz-answer">
-    <input type="hidden" id="hidden-question-quiz-answer" value=<?php echo $answer; ?>>
+    <!-- <div class="btn-group mb-2">
+      <button class="btn btn-dark" onclick="can1.erase();">Erase</button>
+      <button class="btn btn-dark" onclick="can1.recognize();">Recognize</button>
+    </div> -->
+
+
+
+
+      <div class="input-group mb-3">
+        <input class="form-control" type="text" value="" id="question-quiz-answer">
+        <input type="hidden" id="hidden-question-quiz-answer" value=<?php echo $answer; ?>>
+        <div class="input-group-append">
+          <button class="btn btn-dark" onclick="processInput();" type="button">
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
   </div>
 </div>
 
