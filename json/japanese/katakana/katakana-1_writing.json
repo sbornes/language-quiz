@@ -1,0 +1,190 @@
+{
+  "type": "writing",
+  "language_code": "ja",
+  "data": [
+    {
+      "question": "a",
+      "answer": "ア"
+    },
+    {
+      "question": "e",
+      "answer": "エ"
+    },
+    {
+      "question": "ka",
+      "answer": "カ"
+    },
+    {
+      "question": "i",
+      "answer": "イ"
+    },
+    {
+      "question": "u",
+      "answer": "ウ"
+    },
+    {
+      "question": "o",
+      "answer": "オ"
+    },
+    {
+      "question": "ku",
+      "answer": "ク"
+    },
+    {
+      "question": "ke",
+      "answer": "ケ"
+    },
+    {
+      "question": "ko",
+      "answer": "コ"
+    },
+    {
+      "question": "sa",
+      "answer": "サ"
+    },
+    {
+      "question": "shi",
+      "answer": "シ"
+    },
+    {
+      "question": "su",
+      "answer": "ス"
+    },
+    {
+      "question": "se",
+      "answer": "セ"
+    },
+    {
+      "question": "so",
+      "answer": "ソ"
+    },
+    {
+      "question": "ta",
+      "answer": "タ"
+    },
+    {
+      "question": "chi",
+      "answer": "チ"
+    },
+    {
+      "question": "tsu",
+      "answer": "ツ"
+    },
+    {
+      "question": "te",
+      "answer": "テ"
+    },
+    {
+      "question": "to",
+      "answer": "ト"
+    },
+    {
+      "question": "na",
+      "answer": "ナ"
+    },
+    {
+      "question": "ni",
+      "answer": "ニ"
+    },
+    {
+      "question": "nu",
+      "answer": "ヌ"
+    },
+    {
+      "question": "ne",
+      "answer": "ネ"
+    },
+    {
+      "question": "no",
+      "answer": "ノ"
+    },
+    {
+      "question": "ha",
+      "answer": "ハ"
+    },
+    {
+      "question": "hi",
+      "answer": "ヒ"
+    },
+    {
+      "question": "fu",
+      "answer": "フ"
+    },
+    {
+      "question": "he",
+      "answer": "ヘ"
+    },
+    {
+      "question": "ho",
+      "answer": "ホ"
+    },
+    {
+      "question": "ma",
+      "answer": "マ"
+    },
+    {
+      "question": "mi",
+      "answer": "ミ"
+    },
+    {
+      "question": "mu",
+      "answer": "ム"
+    },
+    {
+      "question": "me",
+      "answer": "メ"
+    },
+    {
+      "question": "mo",
+      "answer": "モ"
+    },
+    {
+      "question": "ya",
+      "answer": "ヤ"
+    },
+    {
+      "question": "yu",
+      "answer": "ユ"
+    },
+    {
+      "question": "yo",
+      "answer": "ヨ"
+    },
+    {
+      "question": "ra",
+      "answer": "ラ"
+    },
+    {
+      "question": "ri",
+      "answer": "リ"
+    },
+    {
+      "question": "ru",
+      "answer": "ル"
+    },
+    {
+      "question": "re",
+      "answer": "レ"
+    },
+    {
+      "question": "ro",
+      "answer": "ロ"
+    },
+    {
+      "question": "wa",
+      "answer": "ワ"
+    },
+    {
+      "question": "wo",
+      "answer": "ヲ"
+    },
+    {
+      "question": "n",
+      "answer": "ン"
+    },
+    {
+      "question": "ki",
+      "answer": "キ"
+    }
+  ]
+}

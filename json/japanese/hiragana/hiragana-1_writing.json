@@ -1,0 +1,190 @@
+{
+  "type": "writing",
+  "language_code": "ja",
+  "data": [
+    {
+      "question": "a",
+      "answer": "ぁ"
+    },
+    {
+      "question": "e",
+      "answer": "え"
+    },
+    {
+      "question": "ka",
+      "answer": "か"
+    },
+    {
+      "question": "i",
+      "answer": "い"
+    },
+    {
+      "question": "u",
+      "answer": "う"
+    },
+    {
+      "question": "o",
+      "answer": "お"
+    },
+    {
+      "question": "ku",
+      "answer": "く"
+    },
+    {
+      "question": "ke",
+      "answer": "け"
+    },
+    {
+      "question": "ko",
+      "answer": "こ"
+    },
+    {
+      "question": "sa",
+      "answer": "さ"
+    },
+    {
+      "question": "shi",
+      "answer": "し"
+    },
+    {
+      "question": "su",
+      "answer": "す"
+    },
+    {
+      "question": "se",
+      "answer": "せ"
+    },
+    {
+      "question": "so",
+      "answer": "そ"
+    },
+    {
+      "question": "ta",
+      "answer": "た"
+    },
+    {
+      "question": "chi",
+      "answer": "ち"
+    },
+    {
+      "question": "tsu",
+      "answer": "つ"
+    },
+    {
+      "question": "te",
+      "answer": "て"
+    },
+    {
+      "question": "to",
+      "answer": "と"
+    },
+    {
+      "question": "na",
+      "answer": "な"
+    },
+    {
+      "question": "ni",
+      "answer": "に"
+    },
+    {
+      "question": "nu",
+      "answer": "ぬ"
+    },
+    {
+      "question": "ne",
+      "answer": "ね"
+    },
+    {
+      "question": "no",
+      "answer": "の"
+    },
+    {
+      "question": "ha",
+      "answer": "は"
+    },
+    {
+      "question": "hi",
+      "answer": "ひ"
+    },
+    {
+      "question": "fu",
+      "answer": "ふ"
+    },
+    {
+      "question": "he",
+      "answer": "へ"
+    },
+    {
+      "question": "ho",
+      "answer": "ほ"
+    },
+    {
+      "question": "ma",
+      "answer": "ま"
+    },
+    {
+      "question": "mi",
+      "answer": "み"
+    },
+    {
+      "question": "mu",
+      "answer": "む"
+    },
+    {
+      "question": "me",
+      "answer": "め"
+    },
+    {
+      "question": "mo",
+      "answer": "も"
+    },
+    {
+      "question": "ya",
+      "answer": "や"
+    },
+    {
+      "question": "yu",
+      "answer": "ゆ"
+    },
+    {
+      "question": "yo",
+      "answer": "よ"
+    },
+    {
+      "question": "ra",
+      "answer": "ら"
+    },
+    {
+      "question": "ri",
+      "answer": "り"
+    },
+    {
+      "question": "ru",
+      "answer": "る"
+    },
+    {
+      "question": "re",
+      "answer": "れ"
+    },
+    {
+      "question": "ro",
+      "answer": "ろ"
+    },
+    {
+      "question": "wa",
+      "answer": "わ"
+    },
+    {
+      "question": "wo",
+      "answer": "を"
+    },
+    {
+      "question": "n",
+      "answer": "ん"
+    },
+    {
+      "question": "ki",
+      "answer": "き"
+    }
+  ]
+}

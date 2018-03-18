@@ -1,0 +1,105 @@
+{
+  "type": "quiz",
+  "data": [
+    {
+      "question": "ガ",
+      "answer": "ga"
+    },
+    {
+      "question": "ギ",
+      "answer": "gi"
+    },
+    {
+      "question": "グ",
+      "answer": "gu"
+    },
+    {
+      "question": "ゲ",
+      "answer": "ge"
+    },
+    {
+      "question": "ゴ",
+      "answer": "go"
+    },
+    {
+      "question": "ザ",
+      "answer": "za"
+    },
+    {
+      "question": "ジ",
+      "answer": "ji"
+    },
+    {
+      "question": "ズ",
+      "answer": "zu"
+    },
+    {
+      "question": "ゼ",
+      "answer": "ze"
+    },
+    {
+      "question": "ゾ",
+      "answer": "zo"
+    },
+    {
+      "question": "ダ",
+      "answer": "da"
+    },
+    {
+      "question": "ヂ",
+      "answer": "ji"
+    },
+    {
+      "question": "ヅ",
+      "answer": "zu"
+    },
+    {
+      "question": "デ",
+      "answer": "de"
+    },
+    {
+      "question": "ド",
+      "answer": "do"
+    },
+    {
+      "question": "バ",
+      "answer": "ba"
+    },
+    {
+      "question": "ビ",
+      "answer": "bi"
+    },
+    {
+      "question": "ブ",
+      "answer": "bu"
+    },
+    {
+      "question": "ベ",
+      "answer": "be"
+    },
+    {
+      "question": "ボ",
+      "answer": "bo"
+    },
+    {
+      "question": "パ",
+      "answer": "pa"
+    },
+    {
+      "question": "ピ",
+      "answer": "pi"
+    },
+    {
+      "question": "プ",
+      "answer": "pu"
+    },
+    {
+      "question": "ペ",
+      "answer": "pe"
+    },
+    {
+      "question": "ポ",
+      "answer": "po"
+    }
+  ]
+}

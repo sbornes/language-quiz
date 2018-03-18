@@ -1,0 +1,89 @@
+{
+  "type": "quiz",
+  "data": [
+    {
+      "question": "キャ",
+      "answer": "kya"
+    },
+    {
+      "question": "キュ",
+      "answer": "kyu"
+    },
+    {
+      "question": "キョ",
+      "answer": "kyo"
+    },
+    {
+      "question": "シャ",
+      "answer": "sha"
+    },
+    {
+      "question": "シュ",
+      "answer": "shu"
+    },
+    {
+      "question": "ショ",
+      "answer": "sho"
+    },
+    {
+      "question": "チャ",
+      "answer": "cha"
+    },
+    {
+      "question": "チュ",
+      "answer": "chu"
+    },
+    {
+      "question": "チョ",
+      "answer": "cho"
+    },
+    {
+      "question": "ニャ",
+      "answer": "nya"
+    },
+    {
+      "question": "ニュ",
+      "answer": "nyu"
+    },
+    {
+      "question": "ニョ",
+      "answer": "nyo"
+    },
+    {
+      "question": "ヒャ",
+      "answer": "hya"
+    },
+    {
+      "question": "ヒュ",
+      "answer": "hyu"
+    },
+    {
+      "question": "ヒョ",
+      "answer": "hyo"
+    },
+    {
+      "question": "ミャ",
+      "answer": "mya"
+    },
+    {
+      "question": "ミュ",
+      "answer": "myu"
+    },
+    {
+      "question": "ミョ",
+      "answer": "myo"
+    },
+    {
+      "question": "リャ",
+      "answer": "rya"
+    },
+    {
+      "question": "リュ",
+      "answer": "ryu"
+    },
+    {
+      "question": "リョ",
+      "answer": "ryo"
+    }
+  ]
+}
