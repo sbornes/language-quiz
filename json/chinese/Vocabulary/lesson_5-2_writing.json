@@ -1,0 +1,42 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Xiǎojiě" ,
+      "answer": "小姐"
+    },
+    {
+      "question": "Èr",
+      "answer": "二"
+    },
+    {
+      "question": "Céng" ,
+      "answer": "层"
+    },
+    {
+      "question": "Sì",
+      "answer": "四"
+    },
+    {
+      "question": "Hào",
+      "answer": "号"
+    },
+    {
+      "question": "Bùyòng",
+      "answer": "不用"
+    },
+    {
+      "question": "Zhèr",
+      "answer": "这儿"
+    },
+    {
+      "question": "Wǎn",
+      "answer": "晚"
+    },
+    {
+      "question": "Le",
+      "answer": "了"
+    }
+  ]
+}

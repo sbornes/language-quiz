@@ -1,0 +1,58 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Qù" ,
+      "answer": "去"
+    },
+    {
+      "question": "Yóuyǒng",
+      "answer": "游泳"
+    },
+    {
+      "question": "Zuótiān" ,
+      "answer": "昨天"
+    },
+    {
+      "question": "Jīngjù",
+      "answer": "京剧"
+    },
+    {
+      "question": "Zěnme yàng",
+      "answer": "怎么样"
+    },
+    {
+      "question": "Yǒuyìsi",
+      "answer": "有意思"
+    },
+    {
+      "question": "Jīntiān",
+      "answer": "今天"
+    },
+    {
+      "question": "tiān",
+      "answer": "天"
+    },
+    {
+      "question": "Tiānqì",
+      "answer": "天气"
+    },
+    {
+      "question": "Tài",
+      "answer": "太"
+    },
+    {
+      "question": "Shénme",
+      "answer": "什么"
+    },
+    {
+      "question": "Shíhòu",
+      "answer": "时候"
+    },
+    {
+      "question": "Xiànzài",
+      "answer": "现在"
+    }
+  ]
+}

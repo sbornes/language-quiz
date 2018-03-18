@@ -1,0 +1,82 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Cāntīng" ,
+      "answer": "餐厅"
+    },
+    {
+      "question": "Zài",
+      "answer": "在"
+    },
+    {
+      "question": "Nǎr" ,
+      "answer": "哪儿"
+    },
+    {
+      "question": "Qǐngwèn",
+      "answer": "请问"
+    },
+    {
+      "question": "wèn",
+      "answer": "问"
+    },
+    {
+      "question": "Zhè",
+      "answer": "这"
+    },
+    {
+      "question": "Sùshè",
+      "answer": "宿舍"
+    },
+    {
+      "question": "Nǚ",
+      "answer": "女"
+    },
+    {
+      "question": "Xuéshēng",
+      "answer": "学生"
+    },
+    {
+      "question": "Jìn",
+      "answer": "进"
+    },
+    {
+      "question": "Zuò",
+      "answer": "坐"
+    },
+    {
+      "question": "Xièxiè",
+      "answer": "谢谢"
+    },
+    {
+      "question": "Duìbùqǐ",
+      "answer": "对不起"
+    },
+    {
+      "question": "Wǒ",
+      "answer": "我"
+    },
+    {
+      "question": "Zhīdào",
+      "answer": "知道"
+    },
+    {
+      "question": "Méiguānxì",
+      "answer": "没关系"
+    },
+    {
+      "question": "Hǎo",
+      "answer": "好"
+    },
+    {
+      "question": "Zàijiàn",
+      "answer": "再见"
+    },
+    {
+      "question": "Zài",
+      "answer": "再"
+    }
+  ]
+}
