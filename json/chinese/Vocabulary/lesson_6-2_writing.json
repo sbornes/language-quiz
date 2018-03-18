@@ -1,0 +1,62 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Míngtiān" ,
+      "answer": "明天"
+    },
+    {
+      "question": "Yǒu",
+      "answer": "有"
+    },
+    {
+      "question": "Shíjiān" ,
+      "answer": "时间"
+    },
+    {
+      "question": "Shuō",
+      "answer": "说"
+    },
+    {
+      "question": "Biān",
+      "answer": "遍"
+    },
+    {
+      "question": "Dǎqiú",
+      "answer": "打球"
+    },
+    {
+      "question": "Dǎ",
+      "answer": "打"
+    },
+    {
+      "question": "qiú",
+      "answer": "球"
+    },
+    {
+      "question": "Bàoqiàn",
+      "answer": "抱歉"
+    },
+    {
+      "question": "Máng",
+      "answer": "忙"
+    },
+    {
+      "question": "Kǒngpà",
+      "answer": "恐怕"
+    },
+    {
+      "question": "Xíng",
+      "answer": "行"
+    },
+    {
+      "question": "Xièxiè",
+      "answer": "谢谢"
+    },
+    {
+      "question": "Nǐmen",
+      "answer": "你们"
+    }
+  ]
+}
