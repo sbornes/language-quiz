@@ -97,7 +97,7 @@
     <h5 class="card-text question-text text-center"><?php echo $question; ?></h5>
   </div>
   <div class="card-footer text-center">
-    <div style="position: relative;">
+    <div id="drawable" style="position: relative;">
       <canvas class="bg-light" id="can" width="246px" height="125px" style="border: 2px #252830 solid; cursor: crosshair;"></canvas>
       <div style="position: absolute; top: 0; right: 0;">
         <a href="javascript:void(0);" onclick="can1.erase();" class="">
@@ -105,7 +105,7 @@
         </a>
       </div>
       <div style="position: absolute; bottom: 5px; right: 0;">
-        <a href="javascript:void(0);" onclick="can1.recognize();" class="">
+        <a href="javascript:void(0);" onclick="appendLoader(); can1.recognize();" class="">
           <i class="far fa-check-circle text-success"></i>
         </a>
       </div>
@@ -133,6 +133,9 @@
 </div>
 
 <script>
+
+
+
   var can1 = new handwriting.Canvas(document.getElementById("can"));
 
   can1.setCallBack(function(data, err) {
@@ -140,6 +143,7 @@
       else console.log(data);
 
       $('#question-quiz-answer').val($('#question-quiz-answer').val() + data[0]);
+      $('.can_spinner').remove();
       can1.erase();
   });
   //Set options
