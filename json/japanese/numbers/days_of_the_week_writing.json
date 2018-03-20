@@ -1,0 +1,34 @@
+{
+  "type": "writing",
+  "language_code": "ja",
+  "data": [
+    {
+      "question": "Sunday",
+      "answer": "にちようび"
+    },
+    {
+      "question": "Monday",
+      "answer": "げつようび"
+    },
+    {
+      "question": "Tuesday",
+      "answer": "かようび"
+    },
+    {
+      "question": "Wednesday",
+      "answer": "すいようび"
+    },
+    {
+      "question": "Thursday",
+      "answer": "もくようび"
+    },
+    {
+      "question": "Friday",
+      "answer": "きにょうび"
+    },
+    {
+      "question": "Saturday",
+      "answer": "どようび"
+    }
+  ]
+}

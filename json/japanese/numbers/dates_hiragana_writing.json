@@ -1,0 +1,66 @@
+{
+  "type": "writing",
+  "language_code": "ja",
+  "data": [
+    {
+      "question": "1st",
+      "answer": "ついたち"
+    },
+    {
+      "question": "2nd",
+      "answer": "ふつか"
+    },
+    {
+      "question": "3rd",
+      "answer": "みっか"
+    },
+    {
+      "question": "4th",
+      "answer": "よっか"
+    },
+    {
+      "question": "5th",
+      "answer": "いつか"
+    },
+    {
+      "question": "6th",
+      "answer": "むいか"
+    },
+    {
+      "question": "7th",
+      "answer": "なのか"
+    },
+    {
+      "question": "8th",
+      "answer": "ようか"
+    },
+    {
+      "question": "9th",
+      "answer": "ここのか"
+    },
+    {
+      "question": "10th",
+      "answer": "とおか"
+    },
+    {
+      "question": "14th",
+      "answer": "じゅうよっか"
+    },
+    {
+      "question": "20th",
+      "answer": "はつか"
+    },
+    {
+      "question": "24th",
+      "answer": "にじゅうよっか"
+    },
+    {
+      "question": "31st",
+      "answer": "さんじゅういちにち"
+    },
+    {
+      "question": "30th",
+      "answer": "さんじゅうにち"
+    }
+  ]
+}

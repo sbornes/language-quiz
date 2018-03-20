@@ -1,0 +1,66 @@
+{
+  "type": "writing",
+  "language_code": "ja",
+  "data": [
+    {
+      "question": "1st",
+      "answer": "一日"
+    },
+    {
+      "question": "2nd",
+      "answer": "ニ日"
+    },
+    {
+      "question": "3rd",
+      "answer": "三日"
+    },
+    {
+      "question": "4th",
+      "answer": "四日"
+    },
+    {
+      "question": "5th",
+      "answer": "五日"
+    },
+    {
+      "question": "6th",
+      "answer": "六日"
+    },
+    {
+      "question": "7th",
+      "answer": "ヒ日"
+    },
+    {
+      "question": "8th",
+      "answer": "八日"
+    },
+    {
+      "question": "9th",
+      "answer": "九日"
+    },
+    {
+      "question": "10th",
+      "answer": "十日"
+    },
+    {
+      "question": "14th",
+      "answer": "十四日"
+    },
+    {
+      "question": "20th",
+      "answer": "ニ十日"
+    },
+    {
+      "question": "24th",
+      "answer": "ニ十四日"
+    },
+    {
+      "question": "31st",
+      "answer": "三十一日"
+    },
+    {
+      "question": "30th",
+      "answer": "三十日"
+    }
+  ]
+}
