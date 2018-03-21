@@ -355,6 +355,13 @@ $(document).on('keyup', function(event) {
   }
 });
 
+function nextFlashCard() {
+  var language = $('span#language').text();
+
+  quizArr[1].splice(ArrIndex, 1);
+  newQuestion(language);
+}
+
 function processInput() {
   if ($('#question-quiz-answer').val().length > 0) {
     $('#question-quiz-answer').attr("disabled", true);

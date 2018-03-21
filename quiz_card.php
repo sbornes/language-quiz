@@ -145,7 +145,7 @@
 
 <?php if($type == "flashcards"): ?>
 
-  <div class="flipcard mx-auto">
+  <div class="flipcard mx-auto mb-5">
       <div class="back">
         <button type="button" data-tts="<?php echo $question; ?>" data-tts-language="<?php echo $language_voice[$language_code]; ?>" class="speaker tts-flashcards">
           <i class="far fa-play-circle"></i>
@@ -161,10 +161,12 @@
         </h5>
       </div>
   </div>
-  <!--  -->
-
-
-<script>
-
-</script>
+  <div class="text-center">
+    <div class="mb-1 text-muted">
+      <?php echo $qCount . '/' . $qTotal; ?>
+    </div>
+    <button class="btn btn-primary" onclick="nextFlashCard();" type="button">
+      <i class="fas fa-arrow-circle-right"></i>
+    </button>
+  </div>
 <?php endif; ?>
