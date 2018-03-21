@@ -1,7 +1,8 @@
 <?php
 
-$language_code = array(
-  "chinese" => "zh-CN"
+$language_voice = array(
+  "zh-CN" => "Chinese Female",
+  "ja" => "Japanese Female"
 );
 
 function shuffle_assoc(&$array) {

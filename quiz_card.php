@@ -51,7 +51,7 @@
   <div class="card-header text-uppercase"><span class="w-75 d-inline-block text-truncate"><span id="language"><?php echo str_replace('_', ' ', $language); ?></span> </span><span class="quizCounter float-right"><?php echo $qCount . '/' . $qTotal; ?></span></div>
   <div class="card-body" style="width: 18rem;">
     <h5 class="card-text question-text text-center">
-      <button type="button" data-tts="<?php echo $question; ?>" class="speaker">
+      <button type="button" data-tts="<?php echo $question; ?>" data-tts-language="<?php echo $language_voice[$language_code]; ?>" class="speaker">
         <i class="far fa-play-circle"></i>
       </button>
     </h5>
@@ -110,15 +110,6 @@
         </a>
       </div>
     </div>
-
-    <!-- <div class="btn-group mb-2">
-      <button class="btn btn-dark" onclick="can1.erase();">Erase</button>
-      <button class="btn btn-dark" onclick="can1.recognize();">Recognize</button>
-    </div> -->
-
-
-
-
       <div class="input-group mb-3">
         <input class="form-control" type="text" value="" id="question-quiz-answer">
         <input type="hidden" id="hidden-question-quiz-answer" value=<?php echo $answer; ?>>
@@ -128,14 +119,10 @@
           </button>
         </div>
       </div>
-
   </div>
 </div>
 
 <script>
-
-
-
   var can1 = new handwriting.Canvas(document.getElementById("can"));
 
   can1.setCallBack(function(data, err) {
@@ -153,5 +140,31 @@
         numOfReturn: 1
     }
   );
+</script>
+<?php endif; ?>
+
+<?php if($type == "flashcards"): ?>
+
+  <div class="flipcard mx-auto">
+      <div class="back">
+        <button type="button" data-tts="<?php echo $question; ?>" data-tts-language="<?php echo $language_voice[$language_code]; ?>" class="speaker tts-flashcards">
+          <i class="far fa-play-circle"></i>
+        </button>
+
+         <h5 class="d-flex h-100 align-items-center justify-content-center card-text question-text text-center">
+           <?php echo $answer; ?>
+         </h5>
+      </div>
+      <div class="front">
+        <h5 class="d-flex h-100 align-items-center justify-content-center card-text question-text text-center">
+          <?php echo $question; ?>
+        </h5>
+      </div>
+  </div>
+  <!--  -->
+
+
+<script>
+
 </script>
 <?php endif; ?>

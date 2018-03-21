@@ -43,6 +43,10 @@ $(document).ready(function() {
       $loading.hide();
     });
 
+  $('#data').on('click', '.flipcard', function(event) {
+       $(this).toggleClass("flip");
+    });
+
   $('#data').on('click', '#btnLanguage', function() {
     var language = $(this).attr('data-language');
     var data = {
@@ -139,8 +143,9 @@ $('#data').on('click', '.speaker', function(event) {
   if(!responsiveVoice.isPlaying()) {
     voiceStartCallback();
     var btnValue = $(this).attr('data-tts');
+    var btnLang = $(this).attr('data-tts-language');
     console.log("Speaker Clicked, val = " + btnValue);
-    responsiveVoice.speak(btnValue, "Chinese Female", {onstart: voiceStartCallback, onend: voiceEndCallback});
+    responsiveVoice.speak(btnValue, btnLang, {onstart: voiceStartCallback, onend: voiceEndCallback});
   }
   else {
     voiceEndCallback();
@@ -220,7 +225,7 @@ function getLanguageJson(language, language_sub, language_quiz) {
 
     var quizArrTemp = [];
 
-    if(json.type == "quiz" || json.type == "writing") {
+    if(json.type == "quiz" || json.type == "writing" || json.type == "flashcards") {
       $.each(json.data, function(i, object) {
           quizArrTemp.push({
             "question": object.question,
