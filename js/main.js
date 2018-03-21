@@ -1,4 +1,5 @@
 var quizArr = [];
+var quizArrOld = [];
 var quizArrHistory = [];
 var count = 0;
 var ArrSize = 0;
@@ -6,6 +7,7 @@ var ArrIndex = 0;
 var answerCorrect = 0;
 var random_question = null;
 var review = false;
+var flashCardIndex = 0;
 
 $(document).ready(function() {
 
@@ -208,7 +210,9 @@ function mainPage() {
 
 function reset() {
   quizArr = [];
+  quizArrOld = [];
   quizArrHistory = [];
+  flashCardIndex = 0;
   count = 0;
   ArrSize = 0;
   ArrIndex = 0;
@@ -357,9 +361,56 @@ $(document).on('keyup', function(event) {
 
 function nextFlashCard() {
   var language = $('span#language').text();
+  flashCardIndex += 1;
+  console.log("cardindex: " + flashCardIndex + " count: " + (count));
+  if(flashCardIndex == count && count != ArrSize) {
+    console.log("we in here now");
+    quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
+    newQuestion(language);
+  } else {
+    random_question = quizArrOld[flashCardIndex][0];
+    $('#data').fadeOut(500, function() {
+      $("#data").load('quiz_card.php', {
+        'language': language,
+        'language_code': quizArr[0][0].language_code,
+        'type': quizArr[0][0].type,
+        'question': random_question.question,
+        'answer': random_question.answer,
+        'qCount': flashCardIndex+1,
+        'qTotal': ArrSize
+      }, function() {
+        $('#data').fadeIn(500);
+      });
+    });
+  }
+}
 
-  quizArr[1].splice(ArrIndex, 1);
-  newQuestion(language);
+function backFlashCard() {
+  var language = $('span#language').text();
+
+  if(flashCardIndex == count-1) {
+    console.log('back on new saving');
+    quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
+  }
+
+  flashCardIndex -= 1;
+  console.log("cardindex: " + flashCardIndex + " count: " + (count));
+
+  random_question = quizArrOld[flashCardIndex][0];
+  $('#data').fadeOut(500, function() {
+    $("#data").load('quiz_card.php', {
+      'language': language,
+      'language_code': quizArr[0][0].language_code,
+      'type': quizArr[0][0].type,
+      'question': random_question.question,
+      'answer': random_question.answer,
+      'qCount': flashCardIndex+1,
+      'qTotal': ArrSize
+    }, function() {
+      $('#data').fadeIn(500);
+    });
+  });
+
 }
 
 function processInput() {
