@@ -37,7 +37,12 @@ h2 {
   right: 0;
   top: 0;
   /*adjust s value for speed*/
-  animation: animatedBackground 500s linear infinite;
+
+}
+
+@media (min-width: 1024px) {
+	/* Only do logo animation on desktop, otherwise don't bother */
+	.bg-worldmap { animation: animatedBackground 500s linear infinite; }
 }
 
 @keyframes animatedBackground {
