@@ -362,9 +362,9 @@ $(document).on('keyup', function(event) {
 function nextFlashCard() {
   var language = $('span#language').text();
   flashCardIndex += 1;
-  console.log("cardindex: " + flashCardIndex + " count: " + (count));
+  // console.log("cardindex: " + flashCardIndex + " count: " + (count));
   if(flashCardIndex == count && count != ArrSize) {
-    console.log("we in here now");
+    // console.log("we in here now");
     quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
     newQuestion(language);
   } else {
@@ -389,12 +389,12 @@ function backFlashCard() {
   var language = $('span#language').text();
 
   if(flashCardIndex == count-1) {
-    console.log('back on new saving');
+    // console.log('back on new saving');
     quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
   }
 
   flashCardIndex -= 1;
-  console.log("cardindex: " + flashCardIndex + " count: " + (count));
+  // console.log("cardindex: " + flashCardIndex + " count: " + (count));
 
   random_question = quizArrOld[flashCardIndex][0];
   $('#data').fadeOut(500, function() {
@@ -410,7 +410,6 @@ function backFlashCard() {
       $('#data').fadeIn(500);
     });
   });
-
 }
 
 function processInput() {
