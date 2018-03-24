@@ -326,7 +326,7 @@ function newQuestion(language) {
         $('#question-quiz-answer').focus();
       }
 
-      console.log("quizArr[0].type = " + quizArr[0][0].type);
+    //  console.log("quizArr[0].type = " + quizArr[0][0].type);
 
       if(quizArr[0][0].type == "quiz") {
         $('.card-body').textfill({
@@ -342,6 +342,11 @@ function newQuestion(language) {
             maxFontPixels: 62
         });
       }
+      if(quizArr[0][0].type == "flashcards") {
+        console.log("Flashcards: saved first question");
+        quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
+      }
+
     });
   });
 }
@@ -361,20 +366,37 @@ $(document).on('keyup', function(event) {
 
 function nextFlashCard() {
   var language = $('span#language').text();
-  flashCardIndex += 1;
-  // console.log("cardindex: " + flashCardIndex + " count: " + (count));
-  if(flashCardIndex == count && count != ArrSize) {
-    // console.log("we in here now");
-    quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
-    newQuestion(language);
-  } else {
-    random_question = quizArrOld[flashCardIndex][0];
+
+  if(flashCardIndex >= quizArrOld.length-1) {
+
+    random_question = random_item(quizArr[1]);
+
     $('#data').fadeOut(500, function() {
       $("#data").load('quiz_card.php', {
         'language': language,
         'language_code': quizArr[0][0].language_code,
         'type': quizArr[0][0].type,
         'question': random_question.question,
+        'choices': random_question.choices,
+        'answer': random_question.answer,
+        'qCount': flashCardIndex+1,
+        'qTotal': ArrSize
+      }, function() {
+        $('#data').fadeIn(500);
+        console.log("Saving Question" );
+        quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
+      });
+    });
+  } else {
+
+    random_question = quizArrOld[flashCardIndex+1][0];
+    $('#data').fadeOut(500, function() {
+      $("#data").load('quiz_card.php', {
+        'language': language,
+        'language_code': quizArr[0][0].language_code,
+        'type': quizArr[0][0].type,
+        'question': random_question.question,
+        'choices': random_question.choices,
         'answer': random_question.answer,
         'qCount': flashCardIndex+1,
         'qTotal': ArrSize
@@ -383,19 +405,18 @@ function nextFlashCard() {
       });
     });
   }
+
+  flashCardIndex += 1;
+
+
+  console.log("flashCardIndex: " + flashCardIndex );
+  console.log("quizArrOld: " + quizArrOld.length );
 }
 
 function backFlashCard() {
   var language = $('span#language').text();
 
-  if(flashCardIndex == count-1) {
-    // console.log('back on new saving');
-    quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
-  }
-
   flashCardIndex -= 1;
-  // console.log("cardindex: " + flashCardIndex + " count: " + (count));
-
   random_question = quizArrOld[flashCardIndex][0];
   $('#data').fadeOut(500, function() {
     $("#data").load('quiz_card.php', {
@@ -403,6 +424,7 @@ function backFlashCard() {
       'language_code': quizArr[0][0].language_code,
       'type': quizArr[0][0].type,
       'question': random_question.question,
+      'choices': random_question.choices,
       'answer': random_question.answer,
       'qCount': flashCardIndex+1,
       'qTotal': ArrSize
@@ -410,7 +432,76 @@ function backFlashCard() {
       $('#data').fadeIn(500);
     });
   });
+
+
+
+  console.log("flashCardIndex: " + flashCardIndex );
+  console.log("quizArrOld: " + quizArrOld.length );
 }
+
+// function nextFlashCard() {
+//   var language = $('span#language').text();
+//   flashCardIndex += 1;
+//   console.log("");
+//   console.log("NEXT");
+//   console.log("before cardindex: " + flashCardIndex + " quizArrOld: " + (quizArrOld.length));
+//
+//   if(flashCardIndex >= quizArrOld.length && quizArrOld.length != ArrSize) {
+//     console.log("new question");
+//     quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
+//     newQuestion(language);
+//   } else {
+//     console.log("load question");
+//     random_question = quizArrOld[flashCardIndex][0];
+//     $('#data').fadeOut(500, function() {
+//       $("#data").load('quiz_card.php', {
+//         'language': language,
+//         'language_code': quizArr[0][0].language_code,
+//         'type': quizArr[0][0].type,
+//         'question': random_question.question,
+//         'answer': random_question.answer,
+//         'qCount': flashCardIndex,
+//         'qTotal': ArrSize
+//       }, function() {
+//         $('#data').fadeIn(500);
+//       });
+//     });
+//   }
+//   console.log("after cardindex: " + flashCardIndex + " quizArrOld: " + (quizArrOld.length));
+//   console.log("");
+// }
+
+// function backFlashCard() {
+//   var language = $('span#language').text();
+//
+//   console.log("");
+//   console.log("BACK");
+//   console.log("before cardindex: " + flashCardIndex + " quizArrOld: " + (quizArrOld.length));
+//
+//   flashCardIndex -= 1;
+//
+//   // if(flashCardIndex <= quizArrOld.length) {
+//   //   console.log('back on new saving');
+//   //   quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
+//   // }
+//
+//   random_question = quizArrOld[flashCardIndex][0];
+//   $('#data').fadeOut(500, function() {
+//     $("#data").load('quiz_card.php', {
+//       'language': language,
+//       'language_code': quizArr[0][0].language_code,
+//       'type': quizArr[0][0].type,
+//       'question': random_question.question,
+//       'answer': random_question.answer,
+//       'qCount': flashCardIndex,
+//       'qTotal': ArrSize
+//     }, function() {
+//       $('#data').fadeIn(500);
+//     });
+//   });
+//   console.log("after cardindex: " + flashCardIndex + " quizArrOld: " + (quizArrOld.length));
+//   console.log("");
+// }
 
 function processInput() {
   if ($('#question-quiz-answer').val().length > 0) {
