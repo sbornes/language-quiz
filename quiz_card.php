@@ -104,7 +104,7 @@
           <i class="far fa-times-circle text-danger"></i>
         </a>
       </div>
-      <div style="position: absolute; bottom: 5px; right: 0;">
+      <div style="position: absolute; left: 4px; top: 0;">
         <a href="javascript:void(0);" onclick="appendLoader(); can1.recognize();" class="">
           <i class="far fa-check-circle text-success"></i>
         </a>
