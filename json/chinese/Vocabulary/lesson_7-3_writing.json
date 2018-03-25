@@ -1,0 +1,46 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Wùlǐ" ,
+      "answer": "物理"
+    },
+    {
+      "question": "Huàxué",
+      "answer": "化学"
+    },
+    {
+      "question": "Shùxué" ,
+      "answer": "数学"
+    },
+    {
+      "question": "Yīnyuè",
+      "answer": "音乐"
+    },
+    {
+      "question": "Lìshǐ",
+      "answer": "历史"
+    },
+    {
+      "question": "Zhéxué",
+      "answer": "哲学"
+    },
+    {
+      "question": "Jīngjì",
+      "answer": "经济"
+    },
+    {
+      "question": "Jiàoyù",
+      "answer": "教育"
+    },
+    {
+      "question": "Xuǎnxiū",
+      "answer": "选修"
+    },
+    {
+      "question": "Wénhuà",
+      "answer": "文化"
+    }
+  ]
+}

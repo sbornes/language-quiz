@@ -1,0 +1,66 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Shéi" ,
+      "answer": "谁"
+    },
+    {
+      "question": "Lái",
+      "answer": "来"
+    },
+    {
+      "question": "Jièshào" ,
+      "answer": "介绍"
+    },
+    {
+      "question": "Míngzì",
+      "answer": "名字"
+    },
+    {
+      "question": "Zhōngwén",
+      "answer": "中文"
+    },
+    {
+      "question": "Bàba",
+      "answer": "爸爸"
+    },
+    {
+      "question": "Xuéxí",
+      "answer": "学习"
+    },
+    {
+      "question": "Xué",
+      "answer": "学"
+    },
+    {
+      "question": "Zhuānyè",
+      "answer": "专业"
+    },
+    {
+      "question": "Měishù",
+      "answer": "美术"
+    },
+    {
+      "question": "Měi",
+      "answer": "美"
+    },
+    {
+      "question": "Wénxué",
+      "answer": "文学"
+    },
+    {
+      "question": "Xì",
+      "answer": "系"
+    },
+    {
+      "question": "Jiānádà",
+      "answer": "加拿大"
+    },
+    {
+      "question": "Měiguó",
+      "answer": "美国"
+    }
+  ]
+}

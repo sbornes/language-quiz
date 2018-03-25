@@ -1,0 +1,58 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Kāixué" ,
+      "answer": "开学"
+    },
+    {
+      "question": "Kāi",
+      "answer": "开"
+    },
+    {
+      "question": "Hěn" ,
+      "answer": "很"
+    },
+    {
+      "question": "Gāoxìng",
+      "answer": "高兴"
+    },
+    {
+      "question": "Gāo",
+      "answer": "高"
+    },
+    {
+      "question": "Kàn",
+      "answer": "看"
+    },
+    {
+      "question": "Wèn",
+      "answer": "问"
+    },
+    {
+      "question": "Yīxià",
+      "answer": "一下"
+    },
+    {
+      "question": "Xuéyuàn",
+      "answer": "学院"
+    },
+    {
+      "question": "Míngpiàn",
+      "answer": "名片"
+    },
+    {
+      "question": "à",
+      "answer": "啊"
+    },
+    {
+      "question": "Jiàoshòu",
+      "answer": "教授"
+    },
+    {
+      "question": "Jiào",
+      "answer": "教"
+    }
+  ]
+}
