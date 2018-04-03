@@ -21,6 +21,10 @@ h2 {
   z-index: 1;
 }
 
+.slick-dots {
+  position: initial;
+}
+
 .answerPercent {
   font-size: 116px;
 }
