@@ -1,0 +1,82 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "餐厅",
+      "answer": "Cāntīng | dining hall"
+    },
+    {
+      "question": "在",
+      "answer": "Zài | to be (here, there), to be (in, on, at)"
+    },
+    {
+      "question": "哪儿",
+      "answer": "Nǎr | where"
+    },
+    {
+      "question": "请问",
+      "answer": "Qǐngwèn | may i ask...？"
+    },
+    {
+      "question": "问",
+      "answer": "wèn | to ask"
+    },
+    {
+      "question": "这",
+      "answer": "Zhè | this"
+    },
+    {
+      "question": "宿舍",
+      "answer": "Sùshè | dormitory"
+    },
+    {
+      "question": "女",
+      "answer": "Nǚ | female"
+    },
+    {
+      "question": "学生",
+      "answer": "Xuéshēng | student"
+    },
+    {
+      "question": "进",
+      "answer": "Jìn | to enter"
+    },
+    {
+      "question": "坐",
+      "answer": "Zuò | to sit"
+    },
+    {
+      "question": "谢谢",
+      "answer": "Xièxiè | to thank"
+    },
+    {
+      "question": "对不起",
+      "answer": "Duìbùqǐ | I'm sorry"
+    },
+    {
+      "question": "我",
+      "answer": "Wǒ | I, me"
+    },
+    {
+      "question": "知道",
+      "answer": "Zhīdào | to know"
+    },
+    {
+      "question": "没关系",
+      "answer": "Méiguānxì | never mind, it doesn't matter"
+    },
+    {
+      "question": "好",
+      "answer": "Hǎo | good, well, fine, OK"
+    },
+    {
+      "question": "再见",
+      "answer": "Zàijiàn | goodbye"
+    },
+    {
+      "question": "再",
+      "answer": "Zài | again"
+    }
+  ]
+}

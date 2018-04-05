@@ -1,0 +1,62 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "明天" ,
+      "answer": "Míngtiān | tomorrow"
+    },
+    {
+      "question": "有",
+      "answer": "Yǒu | to have"
+    },
+    {
+      "question": "时间" ,
+      "answer": "Shíjiān | time"
+    },
+    {
+      "question": "说",
+      "answer": "Shuō | to speak, to say"
+    },
+    {
+      "question": "遍",
+      "answer": "Biān | (for action) a time"
+    },
+    {
+      "question": "打球",
+      "answer": "Dǎqiú | to play ball games"
+    },
+    {
+      "question": "打",
+      "answer": "Dǎ | to play"
+    },
+    {
+      "question": "球",
+      "answer": "qiú | ball"
+    },
+    {
+      "question": "抱歉",
+      "answer": "Bàoqiàn | sorry"
+    },
+    {
+      "question": "忙",
+      "answer": "Máng | busy"
+    },
+    {
+      "question": "恐怕",
+      "answer": "Kǒngpà | afraid that..."
+    },
+    {
+      "question": "行",
+      "answer": "Xíng | to be OK"
+    },
+    {
+      "question": "谢谢",
+      "answer": "Xièxiè | to thank"
+    },
+    {
+      "question": "你们",
+      "answer": "Nǐmen | you (polite form)"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "大",
+      "answer": "Dà | big, large"
+    },
+    {
+      "question": "多少",
+      "answer": "Duōshǎo | how many, how much"
+    },
+    {
+      "question": "多",
+      "answer": "Duō | many, much"
+    },
+    {
+      "question": "少",
+      "answer": "Shǎo | few, less"
+    },
+    {
+      "question": "喜欢",
+      "answer": "Xǐhuān | to like"
+    },
+    {
+      "question": "外语",
+      "answer": "Wàiyǔ | foreign language"
+    },
+    {
+      "question": "外",
+      "answer": "Wài | foreign, outside"
+    },
+    {
+      "question": "语",
+      "answer": "Yǔ | language"
+    },
+    {
+      "question": "外国",
+      "answer": "Wàiguó | foreign country"
+    },
+    {
+      "question": "白",
+      "answer": "Bái | hundred"
+    }
+  ]
+}

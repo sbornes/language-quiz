@@ -1,0 +1,66 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "谁",
+      "answer": "Shéi | who, whom"
+    },
+    {
+      "question": "来",
+      "answer": "Lái | to come"
+    },
+    {
+      "question": "介绍",
+      "answer": "Jièshào | to introduce"
+    },
+    {
+      "question": "名字",
+      "answer": "Míngzì | name"
+    },
+    {
+      "question": "中文",
+      "answer": "Zhōngwén | Chinese"
+    },
+    {
+      "question": "爸爸",
+      "answer": "Bàba | dad"
+    },
+    {
+      "question": "学习",
+      "answer": "Xuéxí | to study, to learn"
+    },
+    {
+      "question": "学",
+      "answer": "Xué | to study, to learn"
+    },
+    {
+      "question": "专业",
+      "answer": "Zhuānyè | major, speciality"
+    },
+    {
+      "question": "美术",
+      "answer": "Měishù | fine arts"
+    },
+    {
+      "question": "美",
+      "answer": "Měi | beautiful"
+    },
+    {
+      "question": "文学",
+      "answer": "Wénxué | literature"
+    },
+    {
+      "question": "系",
+      "answer": "Xì | faculty, department"
+    },
+    {
+      "question": "加拿大",
+      "answer": "Jiānádà | Canada"
+    },
+    {
+      "question": "美国",
+      "answer": "Měiguó | the United States of America"
+    }
+  ]
+}

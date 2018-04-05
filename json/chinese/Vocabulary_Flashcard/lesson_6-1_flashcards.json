@@ -1,0 +1,58 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "去" ,
+      "answer": "Qù | to go"
+    },
+    {
+      "question": "游泳",
+      "answer": "Yóuyǒng | to swim"
+    },
+    {
+      "question": "昨天" ,
+      "answer": "Zuótiān | yesterday"
+    },
+    {
+      "question": "京剧",
+      "answer": "Jīngjù | Beijing opera"
+    },
+    {
+      "question": "怎么样",
+      "answer": "Zěnme yàng | how is ..."
+    },
+    {
+      "question": "有意思",
+      "answer": "Yǒuyìsi | interesting"
+    },
+    {
+      "question": "今天",
+      "answer": "Jīntiān | today"
+    },
+    {
+      "question": "天",
+      "answer": "tiān | day"
+    },
+    {
+      "question": "天气",
+      "answer": "Tiānqì | weather"
+    },
+    {
+      "question": "太",
+      "answer": "Tài | too, extremely"
+    },
+    {
+      "question": "什么",
+      "answer": "Shénme | what"
+    },
+    {
+      "question": "时候",
+      "answer": "Shíhòu | time, moment"
+    },
+    {
+      "question": "现在",
+      "answer": "Xiànzài | now"
+    }
+  ]
+}

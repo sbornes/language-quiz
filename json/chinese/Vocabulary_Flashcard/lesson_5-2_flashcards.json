@@ -1,0 +1,42 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "小姐" ,
+      "answer": "Xiǎojiě | Miss, young lady"
+    },
+    {
+      "question": "二",
+      "answer": "Èr | two"
+    },
+    {
+      "question": "层" ,
+      "answer": "Céng | story, floor"
+    },
+    {
+      "question": "四",
+      "answer": "Sì | four"
+    },
+    {
+      "question": "号",
+      "answer": "Hào | ordinal number"
+    },
+    {
+      "question": "不用",
+      "answer": "Bùyòng | need not"
+    },
+    {
+      "question": "这儿",
+      "answer": "Zhèr | here"
+    },
+    {
+      "question": "晚",
+      "answer": "Wǎn | late"
+    },
+    {
+      "question": "了",
+      "answer": "Le | a modal particle, aspect particle"
+    }
+  ]
+}

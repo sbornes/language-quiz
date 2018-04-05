@@ -1,0 +1,46 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "物理",
+      "answer": "Wùlǐ | physics"
+    },
+    {
+      "question": "化学",
+      "answer": "Huàxué | chemistry"
+    },
+    {
+      "question": "数学",
+      "answer": "Shùxué | mathematics"
+    },
+    {
+      "question": "音乐",
+      "answer": "Yīnyuè | music"
+    },
+    {
+      "question": "历史",
+      "answer": "Lìshǐ | history"
+    },
+    {
+      "question": "哲学",
+      "answer": "Zhéxué | philosophy"
+    },
+    {
+      "question": "经济",
+      "answer": "Jīngjì | economics"
+    },
+    {
+      "question": "教育",
+      "answer": "Jiàoyù | education"
+    },
+    {
+      "question": "选修",
+      "answer": "Xuǎnxiū | to take an elective course"
+    },
+    {
+      "question": "文化",
+      "answer": "Wénhuà | culture"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "开学",
+      "answer": "Kāixué | school opens, term begins"
+    },
+    {
+      "question": "开",
+      "answer": "Kāi | to open, to start"
+    },
+    {
+      "question": "很",
+      "answer": "Hěn | very"
+    },
+    {
+      "question": "高兴",
+      "answer": "Gāoxìng | happy, pleased"
+    },
+    {
+      "question": "高",
+      "answer": "Gāo | tall"
+    },
+    {
+      "question": "看",
+      "answer": "Kàn | to watch, to look at"
+    },
+    {
+      "question": "问",
+      "answer": "Wèn | to ask"
+    },
+    {
+      "question": "一下",
+      "answer": "Yīxià | used after a verb to indicate a short, quick, random, informal action"
+    },
+    {
+      "question": "学院",
+      "answer": "Xuéyuàn | institute, college"
+    },
+    {
+      "question": "名片",
+      "answer": "Míngpiàn | business card"
+    },
+    {
+      "question": "啊",
+      "answer": "à | ah, oh"
+    },
+    {
+      "question": "教授",
+      "answer": "Jiàoshòu | professor"
+    },
+    {
+      "question": "教",
+      "answer": "Jiào | to teach, to instruct"
+    }
+  ]
+}

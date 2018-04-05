@@ -1,0 +1,98 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "认识" ,
+      "answer": "Rènshì | to know (somebody)"
+    },
+    {
+      "question": "高兴",
+      "answer": "Gāoxìng | happy, pleased"
+    },
+    {
+      "question": "可以" ,
+      "answer": "Kěyǐ | may"
+    },
+    {
+      "question": "进来",
+      "answer": "Jìnlái | to come in"
+    },
+    {
+      "question": "请",
+      "answer": "Qǐng | please"
+    },
+    {
+      "question": "朋友",
+      "answer": "Péngyǒu | friend"
+    },
+    {
+      "question": "记者",
+      "answer": "Jìzhě | reporter"
+    },
+    {
+      "question": "请问",
+      "answer": "Qǐngwèn | may i ask...?"
+    },
+    {
+      "question": "姓",
+      "answer": "Xìng | surname"
+    },
+    {
+      "question": "贵姓",
+      "answer": "Guìxìng | your surname (polite form)"
+    },
+    {
+      "question": "叫",
+      "answer": "Jiào | to be called"
+    },
+    {
+      "question": "先生",
+      "answer": "Xiānshēng | Mr.; sir"
+    },
+    {
+      "question": "语言",
+      "answer": "Yǔyán | language"
+    },
+    {
+      "question": "学院",
+      "answer": "Xuéyuàn | institude, college"
+    },
+    {
+      "question": "学",
+      "answer": "Xué | to learn, to study"
+    },
+    {
+      "question": "的",
+      "answer": "De | a possessive or modifying particle"
+    },
+    {
+      "question": "学生",
+      "answer": "Xuéshēng | student"
+    },
+    {
+      "question": "什么",
+      "answer": "Shénme | what"
+    },
+    {
+      "question": "学习",
+      "answer": "Xuéxí | to learn, to study"
+    },
+    {
+      "question": "汉语",
+      "answer": "Hànyǔ | chinese (language)"
+    },
+    {
+      "question": "英国",
+      "answer": "Yīngguó | Great Britain, England"
+    },
+    {
+      "question": "加拿大",
+      "answer": "Jiānádà | Canada"
+    },
+    {
+      "question": "美国",
+      "answer": "Měiguó | the United States of America"
+    }
+  ]
+}
