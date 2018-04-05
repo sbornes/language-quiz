@@ -345,6 +345,12 @@ function newQuestion(language) {
       if(quizArr[0][0].type == "flashcards") {
         console.log("Flashcards: saved first question");
         quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
+
+        $('blockquote').textfill({
+            innerTag: "p",
+            maxFontPixels: 62
+        });
+
       }
 
     });
@@ -385,6 +391,11 @@ function nextFlashCard() {
         $('#data').fadeIn(500);
         //console.log("Saving Question" );
         quizArrOld.push(quizArr[1].splice(ArrIndex, 1));
+
+        $('blockquote').textfill({
+            innerTag: "p",
+            maxFontPixels: 62
+        });
       });
     });
   } else {
@@ -402,6 +413,12 @@ function nextFlashCard() {
         'qTotal': ArrSize
       }, function() {
         $('#data').fadeIn(500);
+
+        $('blockquote').textfill({
+            innerTag: "p",
+            maxFontPixels: 62
+        });
+
       });
     });
   }
@@ -429,6 +446,11 @@ function backFlashCard() {
       'qTotal': ArrSize
     }, function() {
       $('#data').fadeIn(500);
+
+      $('blockquote').textfill({
+          innerTag: "p",
+          maxFontPixels: 62
+      });
     });
   });
 

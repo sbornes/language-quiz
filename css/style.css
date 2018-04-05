@@ -21,6 +21,12 @@ h2 {
   z-index: 1;
 }
 
+.blockquote-footer {
+    color: #94C3EA;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .slick-dots {
   position: initial;
 }
@@ -98,7 +104,7 @@ h2 {
   box-sizing: border-box;
   transition: all 1s ease 0s;
   color: white;
-  padding: 15px 40px;
+  /* padding: 15px 40px; */
   backface-visibility: hidden;
   margin: 15px 50px 0;
 }

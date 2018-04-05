@@ -15,6 +15,7 @@
 
 
   if($type == "multiple-choice") { shuffle_assoc($choices); }
+  if($type =="flashcards") { $answer = explode(' | ', $answer); }
 
 ?>
 
@@ -146,14 +147,18 @@
 <?php if($type == "flashcards"): ?>
 
   <div class="flipcard mx-auto mb-5">
-      <div class="back">
+      <div class="back d-flex justify-content-center align-items-center flex-column">
         <button type="button" data-tts="<?php echo $question; ?>" data-tts-language="<?php echo $language_voice[$language_code]; ?>" class="speaker tts-flashcards">
           <i class="far fa-play-circle"></i>
         </button>
-
-         <h5 class="d-flex h-100 align-items-center justify-content-center card-text question-text text-center">
-           <?php echo $answer; ?>
-         </h5>
+         <blockquote class="blockquote text-center">
+            <p class="mb-0 question-text card-text question-text w-100">
+              <?php echo $answer[0]; ?>
+            </p>
+            <?php if(isset($answer[1])) : ?>
+              <footer class="blockquote-footer"><?php echo $answer[1]; ?> </footer>
+            <?php endif; ?>
+          </blockquote>
       </div>
       <div class="front">
         <h5 class="d-flex h-100 align-items-center justify-content-center card-text question-text text-center">

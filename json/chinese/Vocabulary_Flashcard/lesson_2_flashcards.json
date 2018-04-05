@@ -1,0 +1,74 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "忙" ,
+      "answer": "Máng | busy"
+    },
+    {
+      "question": "爸爸",
+      "answer": "Bàba | dad"
+    },
+    {
+      "question": "吗" ,
+      "answer": "Ma | a particle used for questions expecting a yes-no answer"
+    },
+    {
+      "question": "妈妈",
+      "answer": "Māmā | mum"
+    },
+    {
+      "question": "他们",
+      "answer": "Tāmen | they, them"
+    },
+    {
+      "question": "他",
+      "answer": "Tā | he, him"
+    },
+    {
+      "question": "们",
+      "answer": "men | used after pronouns 我，你，他 or certain nouns to denote plurality"
+    },
+    {
+      "question": "都",
+      "answer": "Dōu | both, all"
+    },
+    {
+      "question": "不",
+      "answer": "Bù | not, no"
+    },
+    {
+      "question": "男",
+      "answer": "Nán | male"
+    },
+    {
+      "question": "朋友",
+      "answer": "Péngyǒu | friend"
+    },
+    {
+      "question": "呢",
+      "answer": "Ne | a modal particle used for elliptical questions"
+    },
+    {
+      "question": "哥哥",
+      "answer": "Gēgē | elder brother"
+    },
+    {
+      "question": "要",
+      "answer": "Yào | to want"
+    },
+    {
+      "question": "咖啡",
+      "answer": "Kāfēi | coffee"
+    },
+    {
+      "question": "弟弟",
+      "answer": "Dìdì | younger brother"
+    },
+    {
+      "question": "喝",
+      "answer": "Hē | to drink"
+    }
+  ]
+}
