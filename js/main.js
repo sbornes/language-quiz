@@ -372,7 +372,7 @@ $(document).on('keyup', function(event) {
 
 function nextFlashCard() {
   var language = $('span#language').text();
-
+  $('.btnNav').attr("disabled", true);
   if(flashCardIndex >= quizArrOld.length-1) {
 
     random_question = random_item(quizArr[1]);
@@ -431,7 +431,7 @@ function nextFlashCard() {
 
 function backFlashCard() {
   var language = $('span#language').text();
-
+  $('.btnNav').attr("disabled", true);
   flashCardIndex -= 1;
   random_question = quizArrOld[flashCardIndex][0];
   $('#data').fadeOut(500, function() {

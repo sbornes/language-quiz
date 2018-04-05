@@ -171,13 +171,13 @@
       <?php echo $qCount . '/' . $qTotal; ?>
     </div>
     <?php if ( $qCount > 1 ) : ?>
-    <button class="btn btn-primary" onclick="backFlashCard();" type="button">
+    <button class="btn btn-primary btnNav" onclick="backFlashCard();" type="button">
       <i class="fas fa-arrow-circle-left"></i>
     </button>
   <?php endif; ?>
 
     <?php if ( $qCount != $qTotal ) : ?>
-    <button class="btn btn-primary" onclick="nextFlashCard();" type="button">
+    <button class="btn btn-primary btnNav" onclick="nextFlashCard();" type="button">
       <i class="fas fa-arrow-circle-right"></i>
     </button>
   <?php endif; ?>
