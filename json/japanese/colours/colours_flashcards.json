@@ -1,0 +1,50 @@
+{
+  "type": "flashcards",
+  "language_code": "ja",
+  "data": [
+    {
+      "question": "あか",
+      "answer": "red"
+    },
+    {
+      "question": "きいろ",
+      "answer": "yellow"
+    },
+    {
+      "question": "しろ",
+      "answer": "white"
+    },
+    {
+      "question": "くろ",
+      "answer": "black"
+    },
+    {
+      "question": "むらさき",
+      "answer": "purple"
+    },
+    {
+      "question": "あお",
+      "answer": "blue"
+    },
+    {
+      "question": "みどり",
+      "answer": "green"
+    },
+    {
+      "question": "はいいろ",
+      "answer": "grey"
+    },
+    {
+      "question": "ちゃいろ",
+      "answer": "brown"
+    },
+    {
+      "question": "おれんじ",
+      "answer": "orange"
+    },
+    {
+      "question": "ぴんく",
+      "answer": "pink"
+    }
+  ]
+}
