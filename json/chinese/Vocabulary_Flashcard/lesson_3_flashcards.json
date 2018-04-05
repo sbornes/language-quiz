@@ -1,0 +1,70 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "外婆",
+      "answer": "Wàipó | maternal grandmother"
+    },
+    {
+      "question": "您",
+      "answer": "Nín | you (polite form)"
+    },
+    {
+      "question": "这",
+      "answer": "Zhè | this"
+    },
+    {
+      "question": "他",
+      "answer": "Tā | he, him"
+    },
+    {
+      "question": "外语",
+      "answer": "Wàiyǔ | foreign language"
+    },
+    {
+      "question": "医生",
+      "answer": "Yīshēng | doctor, physician"
+    },
+    {
+      "question": "奶奶",
+      "answer": "Nǎinai | paternal grandmother"
+    },
+    {
+      "question": "是",
+      "answer": "Shì | to be"
+    },
+    {
+      "question": "那",
+      "answer": "Nà | that"
+    },
+    {
+      "question": "哪",
+      "answer": "Nǎ | which"
+    },
+    {
+      "question": "国",
+      "answer": "Guó | country, nation"
+    },
+    {
+      "question": "人",
+      "answer": "Rén | people, person"
+    },
+    {
+      "question": "谁",
+      "answer": "Shéi | who, whom"
+    },
+    {
+      "question": "老师",
+      "answer": "Lǎoshī | teacher"
+    },
+    {
+      "question": "都",
+      "answer": "Dōu | both, all"
+    },
+    {
+      "question": "中国",
+      "answer": "Zhōngguó | china"
+    }
+  ]
+}
