@@ -1,0 +1,34 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "你",
+      "answer": "Nǐ | You"
+    },
+    {
+      "question": "好",
+      "answer": "Hǎo | good, well, fine, OK"
+    },
+    {
+      "question": "吗",
+      "answer": "Ma | (a particle used for a question expecting a yes-no answer)"
+    },
+    {
+      "question": "我",
+      "answer": "Wǒ | I, me"
+    },
+    {
+      "question": "很",
+      "answer": "Hěn | very"
+    },
+    {
+      "question": "呢",
+      "answer": "Ne | (a modal particle used for elliptical questions)"
+    },
+    {
+      "question": "也",
+      "answer": "Yě | too, also"
+    }
+  ]
+}
