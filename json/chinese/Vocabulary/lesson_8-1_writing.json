@@ -1,0 +1,98 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Jiā",
+      "answer": "家"
+    },
+    {
+      "question": "Jǐ",
+      "answer": "几"
+    },
+    {
+      "question": "Kǒu",
+      "answer": "口"
+    },
+    {
+      "question": "Zhàopiàn",
+      "answer": "照片"
+    },
+    {
+      "question": "Hé",
+      "answer": "和"
+    },
+    {
+      "question": "Gè",
+      "answer": "个"
+    },
+    {
+      "question": "Jiějiě",
+      "answer": "姐姐"
+    },
+    {
+      "question": "Liǎng",
+      "answer": "两"
+    },
+    {
+      "question": "Dìdì",
+      "answer": "弟弟"
+    },
+    {
+      "question": "Yīgòng",
+      "answer": "一共"
+    },
+    {
+      "question": "Hái",
+      "answer": "还"
+    },
+    {
+      "question": "Mèimei",
+      "answer": "妹妹"
+    },
+    {
+      "question": "Xiǎo",
+      "answer": "小"
+    },
+    {
+      "question": "Gǒu",
+      "answer": "狗"
+    },
+    {
+      "question": "Dāngrán",
+      "answer": "当然"
+    },
+    {
+      "question": "Zhāng",
+      "answer": "张"
+    },
+    {
+      "question": "Zhēn",
+      "answer": "真"
+    },
+    {
+      "question": "Kě'ài",
+      "answer": "可爱"
+    },
+    {
+      "question": "Ài",
+      "answer": "爱"
+    },
+    {
+      "question": "Méi",
+      "answer": "没"
+    },
+    {
+      "question": "Nán",
+      "answer": "男"
+    },
+    {
+      "question": "Zuò",
+      "answer": "做"
+    },
+    {
+      "question": "Gōngzuò",
+      "answer": "工作"
+    }
+  ]
+}

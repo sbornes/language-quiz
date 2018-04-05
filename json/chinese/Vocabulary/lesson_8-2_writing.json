@@ -1,0 +1,46 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Dà",
+      "answer": "大"
+    },
+    {
+      "question": "Duōshǎo",
+      "answer": "多少"
+    },
+    {
+      "question": "Duō",
+      "answer": "多"
+    },
+    {
+      "question": "Shǎo",
+      "answer": "少"
+    },
+    {
+      "question": "Xǐhuān",
+      "answer": "喜欢"
+    },
+    {
+      "question": "Wàiyǔ",
+      "answer": "外语"
+    },
+    {
+      "question": "Wài",
+      "answer": "外"
+    },
+    {
+      "question": "Yǔ",
+      "answer": "语"
+    },
+    {
+      "question": "Wàiguó",
+      "answer": "外国"
+    },
+    {
+      "question": "Bái",
+      "answer": "白"
+    }
+  ]
+}

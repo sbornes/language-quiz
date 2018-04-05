@@ -1,0 +1,62 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Wèi",
+      "answer": "位"
+    },
+    {
+      "question": "Chē",
+      "answer": "车"
+    },
+    {
+      "question": "Diànnǎo",
+      "answer": "电脑"
+    },
+    {
+      "question": "Cídiǎn",
+      "answer": "词典"
+    },
+    {
+      "question": "Háizi",
+      "answer": "孩子"
+    },
+    {
+      "question": "Zhùjiào",
+      "answer": "助教"
+    },
+    {
+      "question": "Xì zhǔrèn",
+      "answer": "系主任"
+    },
+    {
+      "question": "Lǜshī",
+      "answer": "律师"
+    },
+    {
+      "question": "Gōngchéngshī",
+      "answer": "工程师"
+    },
+    {
+      "question": "Yéyé",
+      "answer": "爷爷"
+    },
+    {
+      "question": "Wàigōng",
+      "answer": "外公"
+    },
+    {
+      "question": "Nián",
+      "answer": "年"
+    },
+    {
+      "question": "Qián",
+      "answer": "前"
+    },
+    {
+      "question": "Chángcháng",
+      "answer": "常常"
+    },
+  ]
+}
