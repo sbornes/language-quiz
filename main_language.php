@@ -32,7 +32,17 @@
       $('.quiz_slider').slick({
         dots: true,
         mobileFirst: true,
-        waitForAnimate: false
+        waitForAnimate: false,
+        swipeToSlide: true
       });
+      $('body').on('wheel', (function(e) {
+        e.preventDefault();
+
+        if (e.originalEvent.deltaY < 0) {
+          $('.quiz_slider').slick('slickNext');
+        } else {
+          $('.quiz_slider').slick('slickPrev');
+        }
+      }));
     });
 </script>
