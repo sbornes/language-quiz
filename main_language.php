@@ -31,7 +31,8 @@
     $(document).ready(function(){
       $('.quiz_slider').slick({
         dots: true,
-        mobileFirst: true
+        mobileFirst: true,
+        waitForAnimate: false
       });
     });
 </script>

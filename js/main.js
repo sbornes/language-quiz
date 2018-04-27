@@ -168,7 +168,7 @@ window.onpopstate = function (event) {
   // console.log(event.state);
   if(event.state) {
     if(event.state.url == "main.php") {
-      $('.button-back').fadeOut(500);
+      $('#btnBack').fadeOut(500);
     }
 
     $('#data2').fadeOut(500, function() {
@@ -272,7 +272,7 @@ function btnStartQuiz() {
   $('#data').fadeOut(500, function() {
     $(this).load('quiz_list.php', function() {
       $(this).fadeIn(500);
-      $('.button-back').fadeIn(500);
+      $('#btnBack').fadeIn(500);
     });
   });
 }
