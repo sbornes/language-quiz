@@ -101,7 +101,7 @@
     <div id="drawable" style="position: relative;">
       <canvas class="bg-light" id="can" width="242px" height="125px" style="border: 2px #252830 solid; cursor: crosshair;"></canvas>
       <div style="position: absolute; top: 0; right: 3px;">
-        <a href="javascript:void(0);" onclick="can1.erase();" class="">
+        <a href="javascript:void(0);" onclick="eraseCanvas();" class="">
           <i class="far fa-times-circle text-danger"></i>
         </a>
       </div>
@@ -194,6 +194,13 @@
     can1.erase();
     $('.canvas-output').empty();
   });
+
+  function eraseCanvas() {
+    can1.erase();
+    if (divMouseUp) {
+      clearTimeout(divMouseUp);
+    }
+  }
 </script>
 <?php endif; ?>
 
