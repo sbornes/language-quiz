@@ -128,6 +128,7 @@
 </div>
 
 <script>
+  var isTouchDevice = 'ontouchstart' in document.documentElement;
   var divMouseUp;
   var can1 = new handwriting.Canvas(document.getElementById("can"));
 
@@ -154,16 +155,37 @@
     }
   );
 
-  $( document.getElementById("can") ).mouseup(function() {
-    divMouseUp = setTimeout(function() {
-      appendLoader();
-      can1.recognize();
-    }, 1000);
+  $("#can").mouseup(function(event) {
+    if(isTouchDevice == false) {
+      divMouseUp = setTimeout(function() {
+        appendLoader();
+        can1.recognize();
+      }, 1000);
+    }
   });
 
-  $( document.getElementById("can") ).mousedown(function() {
-    if (divMouseUp) {
-      clearTimeout(divMouseUp);
+  $("#can").mousedown(function(event) {
+    if(isTouchDevice == false) {
+      if (divMouseUp) {
+        clearTimeout(divMouseUp);
+      }
+    }
+  });
+
+  $("#can").on('touchend', function() {
+    if(isTouchDevice) {
+      divMouseUp = setTimeout(function() {
+        appendLoader();
+        can1.recognize();
+      }, 1000);
+    }
+  });
+
+  $("#can").on('touchstart', function() {
+    if(isTouchDevice) {
+      if (divMouseUp) {
+        clearTimeout(divMouseUp);
+      }
     }
   });
 
