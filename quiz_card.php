@@ -99,19 +99,23 @@
   </div>
   <div class="card-footer text-center">
     <div id="drawable" style="position: relative;">
-      <canvas class="bg-light" id="can" width="246px" height="125px" style="border: 2px #252830 solid; cursor: crosshair;"></canvas>
-      <div style="position: absolute; top: 0; right: 0;">
+      <canvas class="bg-light" id="can" width="242px" height="125px" style="border: 2px #252830 solid; cursor: crosshair;"></canvas>
+      <div style="position: absolute; top: 0; right: 3px;">
         <a href="javascript:void(0);" onclick="can1.erase();" class="">
           <i class="far fa-times-circle text-danger"></i>
         </a>
       </div>
-      <div style="position: absolute; left: 4px; top: 0;">
+      <!-- <div style="position: absolute; left: 4px; top: 0;">
         <a href="javascript:void(0);" onclick="appendLoader(); can1.recognize();" class="">
           <i class="far fa-check-circle text-success"></i>
         </a>
-      </div>
+      </div> -->
+
     </div>
       <div class="input-group mb-3">
+        <div class="canvas-output mb-2 btn-group justify-content-center">
+
+        </div>
         <input class="form-control" type="text" value="" id="question-quiz-answer">
         <input type="hidden" id="hidden-question-quiz-answer" value=<?php echo $answer; ?>>
         <div class="input-group-append">
@@ -124,23 +128,50 @@
 </div>
 
 <script>
+  var divMouseUp;
   var can1 = new handwriting.Canvas(document.getElementById("can"));
 
   can1.setCallBack(function(data, err) {
       if(err) throw err;
       else console.log(data);
 
-      $('#question-quiz-answer').val($('#question-quiz-answer').val() + data[0]);
+      //$('#question-quiz-answer').val($('#question-quiz-answer').val() + data[0]);
+
+      $('.canvas-output').empty();
+
+      $.each( data, function( index, item ){
+        $('.canvas-output').append('<button class="canvas-options btn btn-primary" data-value='+item+'> ' + item + '</button>')
+      });
+
       $('.can_spinner').remove();
-      can1.erase();
+
   });
   //Set options
   can1.setOptions(
     {
         language: "<?php echo $language_code; ?>",
-        numOfReturn: 1
+        numOfReturn: 5
     }
   );
+
+  $( document.getElementById("can") ).mouseup(function() {
+    divMouseUp = setTimeout(function() {
+      appendLoader();
+      can1.recognize();
+    }, 1000);
+  });
+
+  $( document.getElementById("can") ).mousedown(function() {
+    if (divMouseUp) {
+      clearTimeout(divMouseUp);
+    }
+  });
+
+  $('.canvas-output').on('click', '.canvas-options', function(event) {
+    $('#question-quiz-answer').val($('#question-quiz-answer').val() + $(this).attr('data-value'));
+    can1.erase();
+    $('.canvas-output').empty();
+  });
 </script>
 <?php endif; ?>
 

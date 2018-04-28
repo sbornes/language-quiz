@@ -75,6 +75,11 @@ h2 {
   opacity: 1.0;
 }
 
+.canvas-output {
+  height: 36px;
+  width: 100%;
+}
+
 .flipcard {
   position: relative;
   width: 280px;
