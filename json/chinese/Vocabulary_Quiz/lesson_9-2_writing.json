@@ -1,0 +1,38 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Kuàilè",
+      "answer": "快乐"
+    },
+    {
+      "question": "Piàoliang",
+      "answer": "漂亮"
+    },
+    {
+      "question": "Kǎoyā",
+      "answer": "烤鸭"
+    },
+    {
+      "question": "yā",
+      "answer": "鸭"
+    },
+    {
+      "question": "Hē",
+      "answer": "喝"
+    },
+    {
+      "question": "Zài",
+      "answer": "再"
+    },
+    {
+      "question": "Shòu miàn",
+      "answer": "寿面"
+    },
+    {
+      "question": "Miàn",
+      "answer": "面"
+    }
+  ]
+}

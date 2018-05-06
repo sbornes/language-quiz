@@ -1,0 +1,66 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "可乐",
+      "answer": "Kělè | coke"
+    },
+    {
+      "question": "雪碧",
+      "answer": "Xuěbì | sprite"
+    },
+    {
+      "question": "啤酒",
+      "answer": "Píjiǔ | beer"
+    },
+    {
+      "question": "牛奶",
+      "answer": "Niúnǎi | milk"
+    },
+    {
+      "question": "汉堡",
+      "answer": "Hànbǎo | hamburger"
+    },
+    {
+      "question": "热狗",
+      "answer": "Règǒu | hotdog"
+    },
+    {
+      "question": "面包",
+      "answer": "Miànbāo | bread"
+    },
+    {
+      "question": "中餐",
+      "answer": "Zhōngcān | chinese food"
+    },
+    {
+      "question": "西餐",
+      "answer": "Xīcān | western food"
+    },
+    {
+      "question": "茶",
+      "answer": "Chá | tea"
+    },
+    {
+      "question": "米饭",
+      "answer": "Mǐfàn | (cooked) rice"
+    },
+    {
+      "question": "女儿",
+      "answer": "Nǚ'ér | daughter"
+    },
+    {
+      "question": "儿子",
+      "answer": "Érzi | son"
+    },
+    {
+      "question": "晚上",
+      "answer": "Wǎnshàng | evening"
+    },
+    {
+      "question": "店",
+      "answer": "Diàn | store or shop"
+    }
+  ]
+}

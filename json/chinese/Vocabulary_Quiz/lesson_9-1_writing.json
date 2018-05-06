@@ -1,0 +1,154 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Jīnnián",
+      "answer": "今年"
+    },
+    {
+      "question": "Nián",
+      "answer": "年"
+    },
+    {
+      "question": "Suì",
+      "answer": "岁"
+    },
+    {
+      "question": "Zěnme yàng",
+      "answer": "怎么样"
+    },
+    {
+      "question": "Jīntiān",
+      "answer": "今天"
+    },
+    {
+      "question": "Kè",
+      "answer": "课"
+    },
+    {
+      "question": "Xīngqí",
+      "answer": "星期"
+    },
+    {
+      "question": "Shàngwǔ",
+      "answer": "上午"
+    },
+    {
+      "question": "Shàng",
+      "answer": "上"
+    },
+    {
+      "question": "Xiàwǔ",
+      "answer": "下午"
+    },
+    {
+      "question": "Xià",
+      "answer": "下"
+    },
+    {
+      "question": "Xīngqírì",
+      "answer": "星期日"
+    },
+    {
+      "question": "Shēngrì",
+      "answer": "生日"
+    },
+    {
+      "question": "Shēng",
+      "answer": "生"
+    },
+    {
+      "question": "Duōdà",
+      "answer": "多大"
+    },
+    {
+      "question": "Duō",
+      "answer": "多"
+    },
+    {
+      "question": "dà",
+      "answer": "大"
+    },
+    {
+      "question": "Chūshēng",
+      "answer": "出生"
+    },
+    {
+      "question": "Chū",
+      "answer": "出"
+    },
+    {
+      "question": "Shǔ",
+      "answer": "属"
+    },
+    {
+      "question": "Jùhuì",
+      "answer": "聚会"
+    },
+    {
+      "question": "huì",
+      "answer": "会"
+    },
+    {
+      "question": "Zhùhè",
+      "answer": "祝贺"
+    },
+    {
+      "question": "Zhù",
+      "answer": "祝"
+    },
+    {
+      "question": "Cānjiā",
+      "answer": "参加"
+    },
+    {
+      "question": "Le",
+      "answer": "了"
+    },
+    {
+      "question": "Chī",
+      "answer": "吃"
+    },
+    {
+      "question": "Dàngāo",
+      "answer": "蛋糕"
+    },
+    {
+      "question": "Dàn",
+      "answer": "蛋"
+    },
+    {
+      "question": "gāo",
+      "answer": "糕"
+    },
+    {
+      "question": "Mǎi",
+      "answer": "买"
+    },
+    {
+      "question": "Píng",
+      "answer": "瓶"
+    },
+    {
+      "question": "Hóng pútáojiǔ",
+      "answer": "红葡萄酒"
+    },
+    {
+      "question": "Hóng",
+      "answer": "红"
+    },
+    {
+      "question": "pútáo",
+      "answer": "葡萄"
+    },
+    {
+      "question": "jiǔ",
+      "answer": "酒"
+    },
+    {
+      "question": "Běijīng",
+      "answer": "北京"
+    }
+  ]
+}

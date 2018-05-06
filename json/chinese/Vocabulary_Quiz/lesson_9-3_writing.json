@@ -1,0 +1,66 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Kělè",
+      "answer": "可乐"
+    },
+    {
+      "question": "Xuěbì",
+      "answer": "雪碧"
+    },
+    {
+      "question": "Píjiǔ",
+      "answer": "啤酒"
+    },
+    {
+      "question": "Niúnǎi",
+      "answer": "牛奶"
+    },
+    {
+      "question": "Hànbǎo",
+      "answer": "汉堡"
+    },
+    {
+      "question": "Règǒu",
+      "answer": "热狗"
+    },
+    {
+      "question": "Miànbāo",
+      "answer": "面包"
+    },
+    {
+      "question": "Zhōngcān",
+      "answer": "中餐"
+    },
+    {
+      "question": "Xīcān",
+      "answer": "西餐"
+    },
+    {
+      "question": "Chá",
+      "answer": "茶"
+    },
+    {
+      "question": "Mǐfàn",
+      "answer": "米饭"
+    },
+    {
+      "question": "Nǚ'ér",
+      "answer": "女儿"
+    },
+    {
+      "question": "Érzi",
+      "answer": "儿子"
+    },
+    {
+      "question": "Wǎnshàng",
+      "answer": "晚上"
+    },
+    {
+      "question": "Diàn",
+      "answer": "店"
+    }
+  ]
+}

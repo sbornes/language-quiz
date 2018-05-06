@@ -1,0 +1,154 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "今年",
+      "answer": "Jīnnián | this year"
+    },
+    {
+      "question": "年",
+      "answer": "Nián | year"
+    },
+    {
+      "question": "岁",
+      "answer": "Suì | year (of age)"
+    },
+    {
+      "question": "怎么样",
+      "answer": "Zěnme yàng | how is..."
+    },
+    {
+      "question": "今天",
+      "answer": "Jīntiān | today"
+    },
+    {
+      "question": "课",
+      "answer": "Kè | class, lesson"
+    },
+    {
+      "question": "星期",
+      "answer": "Xīngqí | week"
+    },
+    {
+      "question": "上午",
+      "answer": "Shàngwǔ | morning"
+    },
+    {
+      "question": "上",
+      "answer": "Shàng | above, last"
+    },
+    {
+      "question": "下午",
+      "answer": "Xiàwǔ | afternoon"
+    },
+    {
+      "question": "下",
+      "answer": "Xià | below, next"
+    },
+    {
+      "question": "星期日",
+      "answer": "Xīngqírì | sunday"
+    },
+    {
+      "question": "生日",
+      "answer": "Shēngrì | birthday"
+    },
+    {
+      "question": "生",
+      "answer": "Shēng | to be born"
+    },
+    {
+      "question": "多大",
+      "answer": "Duōdà | how old"
+    },
+    {
+      "question": "多",
+      "answer": "Duō | how (many/much)"
+    },
+    {
+      "question": "大",
+      "answer": "dà | big, large"
+    },
+    {
+      "question": "出生",
+      "answer": "Chūshēng | to be born"
+    },
+    {
+      "question": "出",
+      "answer": "Chū | to go, to come out"
+    },
+    {
+      "question": "属",
+      "answer": "Shǔ | to be born in the year of (one of the 12 animals)"
+    },
+    {
+      "question": "聚会",
+      "answer": "Jùhuì | get-together, party"
+    },
+    {
+      "question": "会",
+      "answer": "huì | meeting"
+    },
+    {
+      "question": "祝贺",
+      "answer": "Zhùhè | to congratulate"
+    },
+    {
+      "question": "祝",
+      "answer": "Zhù | to wish"
+    },
+    {
+      "question": "参加",
+      "answer": "Cānjiā | to participate, to attend"
+    },
+    {
+      "question": "了",
+      "answer": "Le | (a modal particle, aspect particle)"
+    },
+    {
+      "question": "吃",
+      "answer": "Chī | to eat"
+    },
+    {
+      "question": "蛋糕",
+      "answer": "Dàngāo | cake"
+    },
+    {
+      "question": "蛋",
+      "answer": "Dàn | egg"
+    },
+    {
+      "question": "糕",
+      "answer": "gāo | cake"
+    },
+    {
+      "question": "买",
+      "answer": "Mǎi | to buy"
+    },
+    {
+      "question": "瓶",
+      "answer": "Píng | bottle"
+    },
+    {
+      "question": "红葡萄酒",
+      "answer": "Hóng pútáojiǔ | red wine"
+    },
+    {
+      "question": "红",
+      "answer": "Hóng | red"
+    },
+    {
+      "question": "葡萄",
+      "answer": "pútáo | grape"
+    },
+    {
+      "question": "酒",
+      "answer": "jiǔ | wine or liquor"
+    },
+    {
+      "question": "北京",
+      "answer": "Běijīng | country"
+    }
+  ]
+}

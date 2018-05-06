@@ -1,0 +1,38 @@
+{
+  "type": "flashcards",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "快乐",
+      "answer": "Kuàilè | happy"
+    },
+    {
+      "question": "漂亮",
+      "answer": "Piàoliang | beautiful, nice"
+    },
+    {
+      "question": "烤鸭",
+      "answer": "Kǎoyā | roast duck"
+    },
+    {
+      "question": "鸭",
+      "answer": "yā | duck"
+    },
+    {
+      "question": "喝",
+      "answer": "Hē | to drink"
+    },
+    {
+      "question": "再",
+      "answer": "Zài | again"
+    },
+    {
+      "question": "寿面",
+      "answer": "Shòu miàn | (birthday) longevity noodles"
+    },
+    {
+      "question": "面",
+      "answer": "Miàn | noodles"
+    }
+  ]
+}
