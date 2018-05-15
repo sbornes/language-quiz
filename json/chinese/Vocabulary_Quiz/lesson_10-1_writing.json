@@ -1,0 +1,55 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Zài",
+      "answer": "在"
+    },
+    {
+      "question": "Guāngpán",
+      "answer": "光盘"
+    },
+    {
+      "question": "Yīnyuè",
+      "answer": "音乐"
+    },
+    {
+      "question": "Chángcháng",
+      "answer": "常常"
+    },
+    {
+      "question": "Gēn",
+      "answer": "跟"
+    },
+    {
+      "question": "Shāngchǎng",
+      "answer": "商场"
+    },
+    {
+      "question": "Yǒumíng",
+      "answer": "有名"
+    },
+    {
+      "question": "Shū",
+      "answer": "书"
+    },
+    {
+      "question": "Bàozhǐ",
+      "answer": "报纸"
+    },
+    {
+      "question": "Běnzi",
+      "answer": "本子"
+    },
+    {
+      "question": "Nà'er",
+      "answer": "那儿"
+    },
+    {
+      "question": "Liángzhù",
+      "answer": "梁祝"
+    }
+
+  ]
+}

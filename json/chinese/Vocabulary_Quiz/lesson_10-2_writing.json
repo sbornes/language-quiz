@@ -1,0 +1,80 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Xiānshēng",
+      "answer": "先生"
+    },
+    {
+      "question": "Yào",
+      "answer": "要"
+    },
+    {
+      "question": "Shīfù",
+      "answer": "师傅"
+    },
+    {
+      "question": "Píngguǒ",
+      "answer": "苹果"
+    },
+    {
+      "question": "Duìbùqǐ",
+      "answer": "对不起"
+    },
+    {
+      "question": "Zěnme",
+      "answer": "怎么"
+    },
+    {
+      "question": "Róngyì",
+      "answer": "容易"
+    },
+    {
+      "question": "Pútáo",
+      "answer": "葡萄"
+    },
+    {
+      "question": "Jīn",
+      "answer": "斤"
+    },
+    {
+      "question": "Qián",
+      "answer": "钱"
+    },
+    {
+      "question": "Kuài",
+      "answer": "块"
+    },
+    {
+      "question": "Máo",
+      "answer": "毛"
+    },
+    {
+      "question": "Guì",
+      "answer": "贵"
+    },
+    {
+      "question": "Zuò",
+      "answer": "做"
+    },
+    {
+      "question": "Fēn",
+      "answer": "分"
+    },
+    {
+      "question": "Sòng",
+      "answer": "送"
+    },
+    {
+      "question": "Gěi",
+      "answer": "给"
+    },
+    {
+      "question": "Zhǎo",
+      "answer": "找"
+    }
+
+
+  ]
+}
