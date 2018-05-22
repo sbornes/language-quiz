@@ -1,0 +1,62 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Wèishéme",
+      "answer": "为什么"
+    },
+    {
+      "question": "Zuótiān",
+      "answer": "昨天"
+    },
+    {
+      "question": "Dōngxī",
+      "answer": "东西"
+    },
+    {
+      "question": "Wánr",
+      "answer": "玩儿"
+    },
+    {
+      "question": "Wǎnshàng",
+      "answer": "晚上"
+    },
+    {
+      "question": "Wǎn",
+      "answer": "晚"
+    },
+    {
+      "question": "Bàn",
+      "answer": "半"
+    },
+    {
+      "question": "Xiě",
+      "answer": "写"
+    },
+    {
+      "question": "Hànzì",
+      "answer": "汉字"
+    },
+    {
+      "question": "Shuìjiào",
+      "answer": "睡觉"
+    },
+    {
+      "question": "Qǐchuáng",
+      "answer": "起床"
+    },
+    {
+      "question": "Yīnggāi",
+      "answer": "应该"
+    },
+    {
+      "question": "Wèntí",
+      "answer": "问题"
+    },
+    {
+      "question": "Kěyǐ",
+      "answer": "可以"
+    }
+  ]
+}
