@@ -1,0 +1,58 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Xiūxí",
+      "answer": "休息"
+    },
+    {
+      "question": "Gěi",
+      "answer": "给"
+    },
+    {
+      "question": "Guàhào",
+      "answer": "挂号"
+    },
+    {
+      "question": "Yǒudiǎn er",
+      "answer": "有点儿"
+    },
+    {
+      "question": "Fāyán",
+      "answer": "发炎"
+    },
+    {
+      "question": "Fāshāo",
+      "answer": "发烧"
+    },
+    {
+      "question": "Gǎnmào",
+      "answer": "感冒"
+    },
+    {
+      "question": "Zhùyuàn",
+      "answer": "住院"
+    },
+    {
+      "question": "Shuǐ",
+      "answer": "水"
+    },
+    {
+      "question": "Yào",
+      "answer": "药"
+    },
+    {
+      "question": "Yuànyì",
+      "answer": "愿意"
+    },
+    {
+      "question": "Zhōngyào",
+      "answer": "中药"
+    },
+    {
+      "question": "Xīyào",
+      "answer": "西药"
+    }
+  ]
+}

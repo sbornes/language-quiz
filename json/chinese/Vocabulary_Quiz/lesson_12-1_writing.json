@@ -1,0 +1,78 @@
+{
+  "type": "writing",
+  "language_code": "zh-CN",
+  "data": [
+    {
+      "question": "Quánshēn",
+      "answer": "全身"
+    },
+    {
+      "question": "Shūfú",
+      "answer": "舒服"
+    },
+    {
+      "question": "Měi",
+      "answer": "每"
+    },
+    {
+      "question": "Duànliàn",
+      "answer": "锻炼"
+    },
+    {
+      "question": "Tóu",
+      "answer": "头"
+    },
+    {
+      "question": "Téng",
+      "answer": "疼"
+    },
+    {
+      "question": "Sǎngzi",
+      "answer": "嗓子"
+    },
+    {
+      "question": "Xiǎng",
+      "answer": "想"
+    },
+    {
+      "question": "Yīyuàn",
+      "answer": "医院"
+    },
+    {
+      "question": "Kànbìng",
+      "answer": "看病"
+    },
+    {
+      "question": "Shēntǐ",
+      "answer": "身体"
+    },
+    {
+      "question": "Yào",
+      "answer": "要"
+    },
+    {
+      "question": "Ba",
+      "answer": "吧"
+    },
+    {
+      "question": "Háishì",
+      "answer": "还是"
+    },
+    {
+      "question": "Yīqǐ",
+      "answer": "一起"
+    },
+    {
+      "question": "Lěng",
+      "answer": "冷"
+    },
+    {
+      "question": "Chuān",
+      "answer": "穿"
+    },
+    {
+      "question": "Yīfú",
+      "answer": "衣服"
+    }
+  ]
+}
